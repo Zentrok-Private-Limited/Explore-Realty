@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Elite Partners spaces</title>
+    <style>
+        .city-card img {
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+
+        .city-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .city-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .city-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card {
+            border: none;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            background: #fff;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* cards ko image pe overlap karne ke liye */
+        .card-section {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #043563;">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">RealEstatePro</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#properties">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- tag hanging html  -->
+    <div class="container-fluid ms-5">
+        <div class="row">
+            <!-- tag 1 -->
+            <div class="col-3">
+                <div class="wrap">
+                    <div class="hanger" id="hanger">
+                        <div class="string"></div>
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="tag" id="tag">
+                            <div class="hole" aria-hidden="true"></div>
+                            <div class="tag-inner">
+                                <h6 class="contact-btn ">Rent</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tag 2 -->
+            <div class="col-3">
+                <div class="wrap">
+                    <div class="hanger" id="hanger">
+                        <div class="string"></div>
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="tag" id="tag">
+                            <div class="hole" aria-hidden="true"></div>
+                            <div class="tag-inner">
+                                <h6 class="contact-btn">Sale</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tag 3 -->
+            <div class="col-3">
+                <div class="wrap">
+                    <div class="hanger" id="hanger">
+                        <div class="string"></div>
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="tag" id="tag">
+                            <div class="hole" aria-hidden="true"></div>
+                            <div class="tag-inner">
+                                <h6 href="#" class="contact-btn">Buy</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tag 4 -->
+            <div class="col-3">
+                <div class="wrap">
+                    <div class="hanger" id="hanger">
+                        <div class="string"></div>
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="tag" id="tag">
+                            <div class="hole" aria-hidden="true"></div>
+                            <div class="tag-inner">
+                                <h6 class="contact-btn">Contact</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="container-fluid p-0 position-relative">
+        <img src="assest/img/maxim-makarov-xHiIc_rF5RI-unsplash.jpg" class="w-100"
+            style="height: 70vh; object-fit: cover;" alt="Commercial Building">
+
+        <!-- Text on Image -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold">Find Your Perfect Commercial Space</h1>
+            <p class="lead">Elite Partners Spaces – Offices • Shops • Warehouses</p>
+            <a href="#properties" class="btn btn-lg mt-3 text-white" style="background-color: #043563;">
+                <i class="bi bi-building"></i> Explore Properties
+            </a>
+        </div>
+
+        <!-- Cards Section (on image) -->
+        <div class="card-section">
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-house feature-icon"></i>
+                        <h5>High Rise Properties </h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-person-lines-fill feature-icon"></i>
+                        <h5>Commercial Properties</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-building feature-icon"></i>
+                        <h5>Plote & Banglo</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid margin ms-3">
+        <div class="row">
+            <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card text-dark mb-3 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h6 class="card-title">Property Marketing Strategy</h6>
+                        <p>Professional photos videos</p>
+                        <p>friendly listings property portals</p>
+                        <p>Social media promotions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card text-dark bg-light mb-3 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h6 class="card-title">Customer Engagement Strategy</h6>
+                        <p>Free property consultation,site visits</p>
+                        <p>24/7 customer support</p>
+                        <p>Personalized property suggestions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3" data-aos="flip-left" data-aos-duration="1000">
+                <div class="card text-dark bg-light mb-3 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h6 class="card-title">Pricing & Investment Strategy</h6>
+                        <p>pricing with no hidden charges</p>
+                        <p>Flexible payment plans</p>
+                        <p>Rental income potential</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card text-dark bg-light mb-3 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h6 class="card-title">Growth & Partnership Strategy</h6>
+                        <p class="paragraph">Collaborations with builders & brokers</p>
+                        <p class="paragraph">Exclusive deals for early buyers</p>
+                        <p class="paragraph">Referral rewards for clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="container my-5" data-aos="fade-up fade-down" data-aos-duration="2000">
+        <h2 class="text-center mb-5">
+            <span class="text-white text-center">Discover Properties</span> Across Top Cities
+        </h2>
+
+        <div class="row g-4">
+            <!-- City Card -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card shadow border-0 text-center h-100 city-card">
+                    <img src="assest/img/zoshua-colah-mviR-sX9rXg-unsplash.jpg" class="card-img-top" alt="Bangalore">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Noida</h5>
+                        <p class="text-muted mb-0">34,385+ Properties</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card shadow border-0 text-center h-100 city-card">
+                    <img src="assest/img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="card-img-top" alt="Gurgaon">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Gurgaon</h5>
+                        <p class="text-muted mb-0">33,557+ Properties</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card shadow border-0 text-center h-100 city-card">
+                    <img src="assest/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg" class="card-img-top" alt="Mumbai">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mumbai</h5>
+                        <p class="text-muted mb-0">33,236+ Properties</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card shadow border-0 text-center h-100 city-card">
+                    <img src="assest/img/ratul-ghosh-J55Otnola1c-unsplash.jpg" class="card-img-top" alt="New Delhi">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">New Delhi</h5>
+                        <p class="text-muted mb-0">31,797+ Properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-4">
+            <a class="btn bg-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View More
+                Cities</a>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Explore Buy / Sell / Rent Property in India
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <a href="#" class="text-dark btn">New Delhi</a>
+                    <a href="#" class="text-dark btn">Noida</a>
+                    <a href="#" class="text-dark btn">Hydrabad</a>
+                    <a href="#" class="text-dark btn">Chennai</a>
+                    <a href="#" class="text-dark btn">Pune</a>
+                    <a href="#" class="text-dark btn">Bangalore</a>
+                    <a href="#" class="text-dark btn">Gurgaon</a>
+                    <a href="#" class="text-dark btn">Lucknow</a>
+                    <a href="#" class="text-dark btn">Kolkata</a>
+                    <a href="#" class="text-dark btn">Thane</a>
+                    <a href="#" class="text-dark btn">Ahmedabad</a>
+                    <a href="#" class="text-dark btn">ALWAR</a>
+                    <a href="#" class="text-dark btn">AMRITSAR</a>
+                    <a href="#" class="text-dark btn">AURANGABAD</a>
+                    <a href="#" class="text-dark btn">BHOPAL</a>
+                    <a href="#" class="text-dark btn">CHANDIGARH</a>
+                    <a href="#" class="text-dark btn">GOA</a>
+                    <a href="#" class="text-dark btn">GANGTOK</a>
+                    <a href="#" class="text-dark btn">HARIDWAR</a>
+                    <a href="#" class="text-dark btn">JAIPUR</a>
+                    <a href="#" class="text-dark btn">INDORE</a>
+                    <a href="#" class="text-dark btn">JALANDHAR</a>
+                    <a href="#" class="text-dark btn">JODHPUR</a>
+                    <a href="#" class="text-dark btn">KHIMSAR</a>
+                    <a href="#" class="text-dark btn">LEH</a>
+                    <a href="#" class="text-dark btn">LUDHIANA</a>
+                    <a href="#" class="text-dark btn">MADURAI</a>
+                    <a href="#" class="text-dark btn">MAHABALESHWAR</a>
+                    <a href="#" class="text-dark btn">MANALI</a>
+                    <a href="#" class="text-dark btn">MUSSOORIE</a>
+                    <a href="#" class="text-dark btn">PALAMPUR</a>
+                    <a href="#" class="text-dark btn">SHIMLA</a>
+                    <a href="#" class="text-dark btn">SURAT</a>
+                    <a href="#" class="text-dark btn">TIRUPATI</a>
+                    <a href="#" class="text-dark btn">UDAIPUR</a>
+                    <a href="#" class="text-dark btn">VISHAKAPATNAM</a>
+                    <a href="#" class="text-dark btn">SRINAGAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container my-5" data-aos="fade-up fade-down" data-aos-duration="2000">
+        <h2 class="text-center text-white mb-4">Explore our Real Estate Services</h2>
+
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5>Agents / Brokers</h5>
+                    <a href="#" class="icons"><i class="bi bi-person-raised-hand"></i></a>
+                    <p class="text-muted">Here Are Hassle-Free Solutions! Buy - Sell - Rent Your Property.</p>
+                    <a href="#" class="btn btn-light">Read More</a>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5>Builders / Developerse</h5>
+                    <a href="#" class="icons"><i class="bi bi-person-workspace"></i></a>
+                    <p class="text-muted">Very professional team, helped me find my office space easily.
+                        Highly recommended!</p>
+                    <a href="#" class="btn btn-light">Read More</a>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5>Architects / Architecture</h5>
+                    <a href=" #" class="icons"><i class="bi bi-building"></i></a>
+                    <p class="text-muted">Elite Partners made property search so simple and stress-free.
+                        Thank you!</p>
+                    <a href="#" class="btn btn-light">Read More</a>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5>Interior Decorators</h5>
+                    <a href="#" class="icons"><i class="bi bi-palette"></i> </a>
+                    <p class="text-muted">Quick response and genuine listings. Found my dream home fast.</p>
+                    <a href="#" class="btn btn-light">Read More</a>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid" data-aos="fade-up fade-down" data-aos-duration="2000">
+        <h1 class="text-white text-center m-5">Featured Property Agents</h1>
+        <div class="row">
+            <!-- img 1 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size">
+                    <img class="card-img"
+                        src="assest/img/2020-10-17.webp">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img 2 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size">
+                    <img class="card-img"
+                        src="assest/img/jason-dent-w3eFhqXjkZE-unsplash.jpg">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img 3 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size">
+                    <img class="card-img"
+                        src="assest/img/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <!-- img 4 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size">
+                    <img class="card-img"
+                        src="assest/img/zoshua-colah-mviR-sX9rXg-unsplash.jpg">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img 5 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size1">
+                    <img class="card-img"
+                        src="assest/img/maxim-makarov-xHiIc_rF5RI-unsplash.jpg">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img 6 -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card size2">
+                    <img class="card-img"
+                        src="assest/img/brian-babb-XbwHrt87mQ0-unsplash.jpg">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                        <p class="card-text">It is the seventh most populous city in Italy, at the heart of a
+                            metropolitan area of about one million people. </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning">Read More</a>
+                            <a href="#" class="card-link text-warning">Book a Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <h3 class="text-muted mt-5 ms-5">
+            Buy, Sell and Rent Properties in India
+        </h3>
+        <p class="text-muted m-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id qui at,
+            consequatur sunt maxime a iure dicta ab facere, iste doloremque adipisci
+            modi magni! Quaerat, et ut nostrum maiores quasi minima vel facere fuga
+            totam suscipit ipsum nisi, ad, laudantium sunt odio. Architecto quos fugit
+            deleniti! Aliquam cum quos error exercitationem! Numquam, voluptas nesciunt
+            consequatur ad commodi sapiente autem sed corporis. Incidunt perferendis
+            repellendus, necessitatibus soluta maxime a nisi aliquam sed cumque rem!
+            Dolorum blanditiis ullam quas quos praesentium illum quia ipsa nesciunt
+            ex eum, repellat doloremque aliquam voluptas qui, nostrum iste architecto
+            reprehenderit molestiae, pariatur voluptates omnis ut numquam veniam.
+            Voluptatum placeat facere minus necessitatibus, possimus labore velit
+            consequatur consequuntur fugiat, rem cum cumque rerum voluptatibus perspiciatis
+            laboriosam accusamus totam fuga eligendi adipisci voluptas! Ea expedita
+            reprehenderit eum. Deserunt temporibus quia architecto error eius. Magni ipsa
+            voluptate ea facilis magnam sint! Exercitationem reprehenderit porro voluptate
+            in assumenda. Necessitatibus, assumenda eligendi vitae natus at ducimus tempora!
+            Explicabo voluptates dolore quis, earum ullam, laudantium accusantium veniam harum,
+            deserunt maiores eveniet error? Tenetur ratione corrupti magni soluta nesciunt
+            totam cumque, laboriosam sapiente neque qui quidem odio vel enim tempora perspiciatis
+            commodi esse molestiae, officiis excepturi est velit voluptatum aperiam? Magnam,
+            soluta?</p>
+    </section>
+
+    <!-- footer -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h2 class="text-muted">For Sale</h2>
+                </div>
+                <div class="col-4">
+                    <h2 class="text-muted">For Rent</h2>
+                </div>
+                <div class="col-4">
+                    <h2 class="text-muted">For Sale</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,   // ek time pe 3 testimonials
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1 },    // mobile pe 1
+            768: { slidesPerView: 2 },  // tablet pe 2
+            1024: { slidesPerView: 3 }  // desktop pe 3
+        }
+    });
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+
+
+<!-- tag hanging script -->
+<script>
+    // Optional: subtle 3D tilt based on mouse
+    const wrap = document.querySelector('.wrap');
+    const hanger = document.getElementById('hanger');
+
+
+    wrap.addEventListener('mousemove', (e) => {
+        const r = wrap.getBoundingClientRect();
+        const cx = r.left + r.width / 2;
+        const cy = r.top + r.height / 2;
+        const dx = (e.clientX - cx) / (r.width / 2);
+        const dy = (e.clientY - cy) / (r.height / 2);
+        const tiltX = (dy * -6).toFixed(2) + 'deg';
+        const tiltY = (dx * 6).toFixed(2) + 'deg';
+        hanger.style.setProperty('--tilt-x', tiltX);
+        hanger.style.setProperty('--tilt-y', tiltY);
+    });
+
+
+    // Click to give a quick "wobble" boost
+    const tag = document.getElementById('tag');
+    tag.addEventListener('click', () => {
+        tag.style.animation = 'none';
+        // force reflow
+        void tag.offsetWidth;
+        tag.style.animation = '';
+    });
+
+
+    // Helper: update brand color quickly
+    function setBrandColor(hex) {
+        document.documentElement.style.setProperty('--accent', hex);
+    }
+    // Example: setBrandColor('#22c55e')
+</script>
