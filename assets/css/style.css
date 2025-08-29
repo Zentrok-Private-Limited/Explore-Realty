@@ -17,6 +17,8 @@ body {
 
 .contant{
   margin-top: 70px;
+  border-radius: 5px; 
+  box-shadow: 10px 30px rgba(230, 227, 227, 0.2);
 }
 
 .city-card img {
@@ -73,9 +75,9 @@ body {
 
 .color {
   font-size: 2rem;
-  color: #f8f9fa;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .icons {
