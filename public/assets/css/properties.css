@@ -1,15 +1,19 @@
-.testimonial-card {
-      border: none;
-      border-radius: 12px;
-      transition: 0.3s;
+
+    .my-btn {
+      /* padding: 12px 4px; */
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      color: black;
     }
-    .testimonial-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    }
-    .testimonial-card img {
-      border: 3px solid #f8f9fa;
-    }
-    .bi-star, .bi-star-fill, .bi-star-half {
-      font-size: 1rem;
+
+    .my-btn:hover {
+      background-color: #284069;
+      /* dark blue on hover */
+      color: #ffffff;
+      /* text color same rahe */
+      transform: scale(1.08);
+      /* thoda zoom effect */
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     }

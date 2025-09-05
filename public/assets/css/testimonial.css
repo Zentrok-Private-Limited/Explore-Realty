@@ -96,3 +96,14 @@ html {
     padding-top: 0;
   }
 }
+
+
+.project-card img {
+  height: 200px;      /* fixed height */
+  /* width: 50%;        pura card width le */
+  object-fit: cover;  /* image crop ho ke fit ho jaye */
+}
+.project-card{
+  height: 300px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
