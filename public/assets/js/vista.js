@@ -47,3 +47,4 @@ if (window.matchMedia("(min-width:576px)").matches) {
   $(multipleItemCarousel).addClass("slide");
 }
 
+// gallery js 

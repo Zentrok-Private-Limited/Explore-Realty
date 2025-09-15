@@ -4,42 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Elite Partners spaces</title>
+    <title>Explore Realty </title>
 </head>
 
 
 <body style="background: #c6e7fd">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="home" style=" background: rgb(102, 133, 179)">
+    <div class="navbar navbar-custom-top">
+        <div class="container d-flex justify-content-end">
+            <span>Contact :- 9876543210</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom-main">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">Elite Partners spaces</a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <!-- <span>Explore Realty</span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="properties.html">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Property</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- tag hanging html  -->
-    <div class="container-fluid sitetags ms-5 ">
-        <div class="row card6">
-            <!-- tag 1 -->
-            <div class="col-3">
+    <!-- <div class="container-fluid sitetags ms-5 ">
+        <div class="row card6"> -->
+    <!-- tag 1 -->
+    <!-- <div class="col-3">
                 <div class="wrap">
                     <div class="hanger" id="hanger">
                         <div class="string"></div>
@@ -52,9 +67,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- tag 2 -->
-            <div class="col-3">
+            </div> -->
+    <!-- tag 2 -->
+    <!-- <div class="col-3">
                 <div class="wrap">
                     <div class="hanger" id="hanger">
                         <div class="string"></div>
@@ -67,9 +82,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- tag 3 -->
-            <div class="col-3">
+            </div> -->
+    <!-- tag 3 -->
+    <!-- <div class="col-3">
                 <div class="wrap">
                     <div class="hanger" id="hanger">
                         <div class="string"></div>
@@ -82,9 +97,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- tag 4 -->
-            <div class="col-3">
+            </div> -->
+    <!-- tag 4 -->
+    <!-- <div class="col-3">
                 <div class="wrap">
                     <div class="hanger" id="hanger">
                         <div class="string"></div>
@@ -99,47 +114,81 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Hero Section -->
     <div class="container-fluid p-0 position-relative">
-        <img src="assets/img/home14.jpg" class="w-100" style="height: 70vh; background-size: auto;" alt="Commercial Building">
+        <img src="assets/img/home14.jpg" class="w-100" style="height: 70vh; background-size: auto;"
+            alt="Commercial Building">
 
         <!-- Text on Image -->
         <div class="position-absolute top-50 mb-5 start-50 translate-middle text-center text-white">
-            <h1 class="display-4 fw-bold">Find Your Perfect Commercial Space</h1>
-            <p class="lead"> • Elite Partners Spaces • </p>
-            <a href="#properties" class="btn btn-lg mt-3 text-white" style="background-color: #043563;">
-                <i class="bi bi-building"></i> Explore Properties
-            </a>
+            <h1 class="display-5 fw-bold">Find Your Perfect Residential & Commercial Space</h1>
+            <p class="lead"> • Explore Realty • </p>
         </div>
 
         <!-- Cards Section (on image) -->
         <div class="card-section">
             <div class="row g-4">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <div class="card feature-card">
                         <i class="bi bi-house feature-icon"></i>
                         <h5>High Rise Properties </h5>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <div class="card feature-card">
                         <i class="bi bi-person-lines-fill feature-icon"></i>
                         <h5>Commercial Properties</h5>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <div class="card feature-card">
                         <i class="bi bi-building feature-icon"></i>
-                        <h5>Plote & Banglo</h5>
+                        <h5>Plot & Bungalow</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-building feature-icon"></i>
+                        <h5>Dealers Floor</h5>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <section class="property-search container">
+        <h2>Find Your Property</h2>
+
+        <!-- Filters Form -->
+        <form id="searchForm">
+            <div class="filters">
+                <select name="city">
+                    <option value="">Select City</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+
+                <select name="listingType">
+                    <option value="">Property Type</option>
+                    <option value="Buy">Buy</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+
+                <input type="number" name="minPrice" placeholder="Min Price" />
+                <input type="number" name="maxPrice" placeholder="Max Price" />
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- Results -->
+        <div id="results" class="property-listings"></div>
+    </section>
+
 
     <div class="container-fluid margin ms-3">
         <div class="row">
@@ -190,7 +239,6 @@
     </div>
 
 
-
     <section class="container my-5" data-aos="fade-up fade-down" data-aos-duration="2000">
         <h2 class="text-center mb-5">
             <span class="text-danger text-center">Discover Properties Across Top Cities</span>
@@ -231,7 +279,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card shadow border-0 text-center h-100 city-card">
-                    <img src="assets/img/ratul-ghosh-J55Otnola1c-unsplash.jpg" class="card-img-top" alt="New Delhi">
+                    <img src="assets/img/home11.webp" class="card-img-top" alt="New Delhi">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">New Delhi</h5>
                         <p class="text-muted mb-0">31,797+ Properties</p>
@@ -421,7 +469,7 @@
                 <!-- img 5 -->
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                     <div class="card size1">
-                        <img class="card-img" src="assets/img/maxim-makarov-xHiIc_rF5RI-unsplash.jpg">
+                        <img class="card-img" src="assets/img/home18.jpg">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
                             <h4 class="card-title">Bologna</h4>
                             <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
@@ -542,6 +590,7 @@
 
 
 
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -582,31 +631,31 @@
 <!-- tag hanging script -->
 <script>
     // Optional: subtle 3D tilt based on mouse
-    const wrap = document.querySelector('.wrap');
-    const hanger = document.getElementById('hanger');
+    // const wrap = document.querySelector('.wrap');
+    // const hanger = document.getElementById('hanger');
 
 
-    wrap.addEventListener('mousemove', (e) => {
-        const r = wrap.getBoundingClientRect();
-        const cx = r.left + r.width / 2;
-        const cy = r.top + r.height / 2;
-        const dx = (e.clientX - cx) / (r.width / 2);
-        const dy = (e.clientY - cy) / (r.height / 2);
-        const tiltX = (dy * -6).toFixed(2) + 'deg';
-        const tiltY = (dx * 6).toFixed(2) + 'deg';
-        hanger.style.setProperty('--tilt-x', tiltX);
-        hanger.style.setProperty('--tilt-y', tiltY);
-    });
+    // wrap.addEventListener('mousemove', (e) => {
+    //     const r = wrap.getBoundingClientRect();
+    //     const cx = r.left + r.width / 2;
+    //     const cy = r.top + r.height / 2;
+    //     const dx = (e.clientX - cx) / (r.width / 2);
+    //     const dy = (e.clientY - cy) / (r.height / 2);
+    //     const tiltX = (dy * -6).toFixed(2) + 'deg';
+    //     const tiltY = (dx * 6).toFixed(2) + 'deg';
+    //     hanger.style.setProperty('--tilt-x', tiltX);
+    //     hanger.style.setProperty('--tilt-y', tiltY);
+    // });
 
 
-    // Click to give a quick "wobble" boost
-    const tag = document.getElementById('tag');
-    tag.addEventListener('click', () => {
-        tag.style.animation = 'none';
-        // force reflow
-        void tag.offsetWidth;
-        tag.style.animation = '';
-    });
+    // // Click to give a quick "wobble" boost
+    // const tag = document.getElementById('tag');
+    // tag.addEventListener('click', () => {
+    //     tag.style.animation = 'none';
+    //     // force reflow
+    //     void tag.offsetWidth;
+    //     tag.style.animation = '';
+    // });
 
 
     // Helper: update brand color quickly

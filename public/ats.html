@@ -4,31 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/vista.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ats.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Elite Partners spaces</title>
+    <title>Explore Realty</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="home" style=" background: rgb(102, 133, 179)">
+    <div class="navbar navbar-custom-top">
+        <div class="container d-flex justify-content-end">
+            <span>Contact :- 9876543210</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom-main">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">Elite Partners spaces</a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <!-- <span>Explore Realty</span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="properties.html">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Property</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,26 +56,471 @@
     <div class='dashboard'>
         <aside class="dashboard-nav" role="navigation" aria-label="Sidebar">
             <nav class="dashboard-nav-list">
-                <a href="#" class="dashboard-nav-item active"><span class="nav-label">Overview</span></a>
+                <a href="#overview" class="dashboard-nav-item active"><span class="nav-label">Overview</span></a>
 
-                <a href="#" class="dashboard-nav-item"></i><span class="nav-label">Apartment Pricing</span></a>
+                <a href="#pricing" class="dashboard-nav-item"></i><span class="nav-label">Apartment Pricing</span></a>
 
-                <a href="#" class="dashboard-nav-item"></i><span class="nav-label">Amenities </span></a>
+                <a href="#amenities" class="dashboard-nav-item"></i><span class="nav-label">Amenities </span></a>
 
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Summary</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Internal</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Pricing</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Quick Takeaways</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Current</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Customer</span></a>
-                <a href="#" class="dashboard-nav-item"><span class="nav-label">Preferences</span></a>
+                <a href="#location" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
+                <a href="#summary" class="dashboard-nav-item"><span class="nav-label">Summary</span></a>
+                <a href="#internal" class="dashboard-nav-item"><span class="nav-label">Internal</span></a>
+                <a href="#pricing" class="dashboard-nav-item"><span class="nav-label">Pricing</span></a>
+                <a href="#quick" class="dashboard-nav-item"><span class="nav-label">Quick Takeaways</span></a>
+                <a href="#current" class="dashboard-nav-item"><span class="nav-label">Current</span></a>
+                <a href="#customer" class="dashboard-nav-item"><span class="nav-label">Customer</span></a>
+                <a href="#preferences" class="dashboard-nav-item"><span class="nav-label">Preferences</span></a>
             </nav>
         </aside>
         <!-- ===================side navbar end================ -->
 
         <div class='dashboard-app' id="overview">
-           
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="assets/img/ats-1.jpg" class="img-fluid p-0 ms-3"
+                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
+                </div>
+
+                <h1 class="divino fs-1 d-flex justify-content-center mt-4">ATS Picturesque Reprieves</h1>
+                <h2 class="ms-3 fs-2">Overview</h2>
+
+                <div class="container-fluid overview p-3 rounded">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span> UPRERAPRJ396176 & UPRERAPRJ631</p>
+                            <p><span class="fw-bold">Developer:</span> ATS Homes Private Limited </p>
+                            <p><span class="fw-bold">Project Name:</span>: ATS Picturesque Reprieves (Phase-I &
+                                Phase-II)</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Exact Site:</span>Plot No. 1B, Block F, Sector-50, Noida – 201303.
+                            </p>
+                            <p><span class="fw-bold">Price:</span> ₹2.67 crore </p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Project Size:</span>Approximately 20–35 acres with around 18
+                                towers, each up to 37 floors </p>
+                            <div class="elite">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-white text-decoration-none ms-2">Contact Elite Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===============================Architecture & Them======================================  -->
+            <section class="gallery-section mt-2">
+                <div class="container">
+                    <h2>Our Gallery</h2>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ats-11.jpg" alt="Gallery Image 1">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ats-10.webp" alt="Gallery Image 2">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ats-4.jpg" alt="Gallery Image 3">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ATS-6.jpg" alt="Gallery Image 4">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ats-7.webp" alt="Gallery Image 5">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-img">
+                                <img src="assets/img/ats-1.jpg" alt="Gallery Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================Price List===================================  -->
+            <section class="price-section">
+                <div class="container">
+                    <h2>Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>3 BHK + 3 Toilet</h5>
+                                <p><strong>Size :</strong> 1850 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹ 2.30 Cr* Onwards</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>3 BHK + 3 Toilet</h5>
+                                <p><strong>Size :</strong> 2350 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹ 2.90 Cr* Onwards</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>4 BHK + 4 Toilet</h5>
+                                <p><strong>Size :</strong> 3200 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹ 3.85 Cr* Onwards</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================Amenities & Lifestyle Features============================== -->
+
+            <section class="py-5 amenities">
+                <div class="container">
+                    <h1 class="text-center mb-4">Features & Amenities</h1>
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <div class="amenity-title">Yoga Deck</div>
+                                <div class="amenity-desc">Unwind and flex your muscles at the yoga deck.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-tv"></i>
+                                </div>
+                                <div class="amenity-title">Mini Theatre</div>
+                                <div class="amenity-desc">Catch the latest blockbuster in the exclusive mini theatre.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-car-front"></i>
+                                </div>
+                                <div class="amenity-title">Reserved Parking</div>
+                                <div class="amenity-desc">Largest Car Parking with Exclusive Valet Service</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <div class="amenity-title">Green Themed Reception</div>
+                                <div class="amenity-desc">Integrate nature into every aspect of your life</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-water"></i>
+                                </div>
+                                <div class="amenity-title">Swimming Pool</div>
+                                <div class="amenity-desc">India’s largest ethnic mall with largest F&B area</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <div class="amenity-title">Reading Lounge</div>
+                                <div class="amenity-desc">Make all your occasions memorable in our multi-purpose hall.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <div class="amenity-title">Security</div>
+                                <div class="amenity-desc">On Vigil 24x7: Fire Safety & Advanced Security System</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-bar-chart-line"></i>
+                                </div>
+                                <div class="amenity-title">Gym</div>
+                                <div class="amenity-desc">One of the best ways to improve your physical health</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================projects=========================== -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section class="container">
+                    <h1 class="text-center">Project</h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+                                <h4 class="card-title mt-4 ms-3">Kalpataru Vista</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn my-btn mb-2">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+                                <h4 class="card-title mt-3 ms-3">GYGY</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn my-btn mb-2">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home6.avif" class="card-img-top" height="100vh" alt="Project">
+                                <h4 class="card-title mt-4 ms-3">ATS Picturesque Reprieves</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn my-btn mb-2">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ========================location & Connectivity================== -->
+            <div class="container my-5">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.15137437762!2d77.47416067450231!3d28.444852892580546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1007653d66b%3A0x32f4c4533df754e3!2sATS%20Picturesque%20Reprieves%20Sector%20152!5e0!3m2!1sen!2sin!4v1757397027232!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>1. 03 km from Pari Chowk</em></p>
+                        <p><em>2. 07 minutes drive from International Cricket Stadium</em></p>
+                        <hr>
+                        <p><em>3. 25 minutes drive from Kalindi Kunj</em></p>
+                        <p><em>4. 04 km from Yamuna Expressway</em></p>
+                        <p><em>5. 30 minutes drive from South Delhi</em></p>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================Floor Plans==========================  -->
+            <!-- Floor Plans Section -->
+            <div class="container my-5">
+                <h1 class="text-center mb-5">Floor Plans</h1>
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(221, 232, 248);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal"
+                            data-img="https://via.placeholder.com/800x800?text=4+BHK+Plan">
+                            <h5>Type A (4BHK)</h5>
+                            <p>3200 sq.ft. • 4 Beds • 5 Baths</p>
+                            <button class="btn btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(230, 239, 253);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal1"
+                            data-img="https://via.placeholder.com/800x800?text=3+BHK+Plan">
+                            <h5>Type B (3BHK)</h5>
+                            <p>2830 sq.ft. • 3 Beds • 4 Baths</p>
+                            <button class="btn btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(214, 229, 252);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal2"
+                            data-img="https://via.placeholder.com/800x800?text=3+BHK+Compact+Plan">
+                            <h5>Type C (3BHK)</h5>
+                            <p>1850 sq.ft. • 3 Beds • 3 Baths</p>
+                            <button class="btn btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========================Modal Lightbox================================= -->
+            <!-- Modal Lightbox 1 -->
+            <div class="modal fade" id="floorPlanModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-white"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/ats-3BHK.webp" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================Modal Lightbox 2============================== -->
+
+            <div class="modal fade" id="floorPlanModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-danger"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/ats-4BHK.jpeg" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================================Modal Lightbox 3====================================== -->
+            <div class="modal fade" id="floorPlanModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-white"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/ats-3BHK1.webp" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sed_testimonial_section homepage-about-us-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Testimonials -->
+                            <div class="left_text_testi_contetn">
+                                <div class="test_user_review_content change_contet_test" data-index="1"
+                                    style="display: block;">
+                                    <h1>High Floors (Top / Upper Floors)</h1>
+                                    <p>• Premium views (skyline, greenery, cityscape)</p>
+
+                                    <p>• Less noise, dust (especially near busy roads)</p>
+
+                                    <p>• More privacy, better ventilation & sunlight</p>
+
+                                    <p>• Higher resale value in luxury projects</p>
+                                    <p class="bottom_line_yello"></p>
+                                    <h1>Concerns:</h1>
+                                    <p>• Higher temperature in summers (roof heat).</p>
+                                    <p>• Dependency on lifts (power backup is a must).</p>
+                                    <p>• Higher maintenance cost sometimes.</p>
+
+                                </div>
+                                <div class="test_user_review_content change_contet_test" data-index="2"
+                                    style="display: none;">
+                                    <h1>Middle Floors</h1>
+                                    <p>• Balanced choice — neither too high nor too low.</p>
+                                    <p>• Easy accessibility without being too dependent on elevators.</p>
+                                    <p>• Reasonable sunlight & ventilation.</p>
+                                    <p>• Lower price compared to top floors, but still better than ground floors in
+                                        terms of dust/noise.</p>
+                                    <p class="bottom_line_yello"></p>
+                                    <h1>Concerns:</h1>
+                                    <p>• Not as premium as top floors, but more expensive than ground floors.</p>
+                                    <p>• Noise from surrounding flats.</p>
+                                </div>
+                                <div class="test_user_review_content change_contet_test" data-index="3"
+                                    style="display: none;">
+                                    <h1>Lower Floors (Ground + 1st–2nd Floor)</h1>
+                                    <p>• Easy accessibility (can avoid lifts).</p>
+                                    <p>• Faster evacuation in case of emergency.</p>
+                                    <p>• Convenient for carrying groceries, strollers, or furniture.</p>
+                                    <p>• Sometimes come with extra features like garden/terrace (in luxury apartments).
+                                    </p>
+                                    <p class="bottom_line_yello"></p>
+                                    <h1>Concerns:</h1>
+                                    <p>• More dust, insects, and traffic noise (especially near expressways like
+                                        Noida-Greater Noida).</p>
+                                    <p>• Less sunlight and ventilation.</p>
+                                    <p>• Lower resale value compared to higher floors.</p>
+                                </div>
+                                <!-- Add more up to data-index="8" if needed -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-2">
+                            <!-- Main image -->
+                            <div class="img_peroson_fullsize">
+                                <img class="img-fluid main-user-img" src="assets/img/ats-19.jpg" alt="User">
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="testi_person_img_icon">
+                                <ul>
+                                    <li class="active_user">
+                                        <img src="assets/img/ats-19.jpg" data-index="1" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/ats-20.jpg" data-index="2" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/ats-15.jpg" data-index="3" alt="User 1">
+                                    </li>
+                                    <!-- Add 6 more -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
         </div>
     </div>
 
@@ -125,6 +587,29 @@
 
 
 
+    <script>
+        document.querySelectorAll('.testi_person_img_icon ul li img').forEach(img => {
+            img.addEventListener('click', function () {
+                const index = this.getAttribute('data-index');
+
+                // 1. Content change
+                document.querySelectorAll('.test_user_review_content').forEach(content => {
+                    content.style.display = content.getAttribute('data-index') === index ? 'block' : 'none';
+                });
+
+                // 2. Change main image
+                const mainImage = document.querySelector('.img_peroson_fullsize .main-user-img');
+                mainImage.src = this.src;
+
+                // 3. Highlight active thumbnail
+                document.querySelectorAll('.testi_person_img_icon ul li').forEach(li => {
+                    li.classList.remove('active_user');
+                });
+                this.parentElement.classList.add('active_user');
+            });
+        });
+
+    </script>
 
 
 </body>

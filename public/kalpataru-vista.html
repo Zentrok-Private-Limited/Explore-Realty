@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/vista.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,23 +12,39 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Elite Partners spaces</title>
+    <title>Explore Realty</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="home" style=" background: rgb(102, 133, 179)">
+    <div class="navbar navbar-custom-top">
+        <div class="container d-flex justify-content-end">
+            <span>Contact :- 9876543210</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom-main">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">Elite Partners spaces</a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <!-- <span>Explore Realty</span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="properties.html">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Property</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,8 +76,8 @@
         <div class='dashboard-app' id="overview">
             <div class="container-fluid">
                 <div class="row">
-                    <img src="assets/img/hotel.jpg" class="img-fluid p-0 ms-3" style="height: 50vh; width: 79vw; object-fit: cover;"
-                        alt="">
+                    <img src="assets/img/hotel.jpg" class="img-fluid p-0 ms-3"
+                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
                 </div>
 
                 <h1 class="divino d-flex justify-content-center mt-4">Kalpataru Vista</h1>
@@ -257,19 +273,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Note -->
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <div class="card note-card p-3">
-                            <p class="mb-0">
-                                <strong>Note:</strong> Prices may vary across builder quotes, property portals & resale
-                                transactions.
-                                Some resale listings show entry pricing from <strong>₹2.69 – 4 Cr onwards</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- ====================================Amenities & Lifestyle Features================================================ -->
             <div class="container my-5" id="amenities">
@@ -291,8 +294,8 @@
                     <!-- Fitness -->
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="card h-100 shadow-sm rounded-3">
-                            <img src="assets/img/modern-urban-gym.jpg"
-                                class="card-img-top rounded-top" alt="Wellness & Fitness">
+                            <img src="assets/img/vista-9.webp" class="card-img-top rounded-top"
+                                alt="Wellness & Fitness">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Wellness & Fitness</h5>
                                 <p class="card-text">Gym, yoga & meditation zones, jogging tracks, spa & wellness
@@ -330,8 +333,8 @@
                     <!-- Security -->
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="card h-100 shadow-sm rounded-3">
-                            <img src="assets/img/ai-powered-device-concept.jpg"
-                                class="card-img-top rounded-top" alt="Safety & Security">
+                            <img src="assets/img/ai-powered-device-concept.jpg" class="card-img-top rounded-top"
+                                alt="Safety & Security">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Safety & Security</h5>
                                 <p class="card-text">24x7 CCTV, smart access, fire-safety systems.</p>
@@ -342,8 +345,8 @@
                     <!-- Luxury -->
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="card h-100 shadow-sm rounded-3">
-                            <img src="assets/img/neon-robot-vacuum-cleaner.jpg"
-                                class="card-img-top rounded-top" alt="Luxury Living">
+                            <img src="assets/img/neon-robot-vacuum-cleaner.jpg" class="card-img-top rounded-top"
+                                alt="Luxury Living">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Luxury Living Add-ons</h5>
                                 <p class="card-text">Concierge, valet, high-speed elevators, ample parking, pet-friendly
@@ -431,51 +434,6 @@
 
                 </div>
             </div>
-            <!-- ================================Summary Table==================================== -->
-            <div class="container my-5" id="summary">
-                <h2 class="text-center mb-4">Summary Table</h2>
-
-                <div class="table-responsive shadow-lg rounded-4 overflow-hidden">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="text-dark">
-                            <tr>
-                                <th scope="col">Configuration</th>
-                                <th scope="col">Size (sq. ft)</th>
-                                <th scope="col">Price Range (₹ Cr)</th>
-                                <th scope="col">Price / sq. ft</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="badge text-dark fs-6 px-3 py-2">3 BHK</span></td>
-                                <td>3,011 – 3,047</td>
-                                <td><strong>₹5.42 – 5.48 Cr</strong></td>
-                                <td>₹16,400 – 27,000</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge text-dark fs-6 px-3 py-2">4 BHK</span></td>
-                                <td>3,905 – 4,145</td>
-                                <td><strong>₹7.03 – 7.46 Cr</strong></td>
-                                <td>₹16,500 – 27,000</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge text-dark fs-6 px-3 py-2">Duplex</span></td>
-                                <td>~3,500+</td>
-                                <td><em>On Request</em></td>
-                                <td>—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="alert alert-info mt-4 shadow-sm rounded-3" role="alert">
-                    <i class="bi bi-info-circle-fill me-2"></i>
-                    <strong>Note:</strong> Prices vary across builder quotes, broker portals & resale listings.
-                    Some resale units start from <strong>₹2.69 Cr</strong>, while premium furnished units can reach
-                    up to <strong>~₹37,000/sq. ft</strong>.
-                </div>
-            </div>
-
             <!-- =============================Internal Comparison=============================== -->
             <div class="container my-5" id="internal">
                 <h2 class="ms-3">Internal Comparison – Floor Plans</h2>
@@ -503,8 +461,7 @@
                     <!-- 4 BHK -->
                     <div class="col-md-4">
                         <div class="card shadow-sm h-100">
-                            <img src="assets/img/4bhk.jpg" class="card-img-top"
-                                alt="4 BHK Floor Plan Kalpataru Vista">
+                            <img src="assets/img/4bhk.jpg" class="card-img-top" alt="4 BHK Floor Plan Kalpataru Vista">
                             <div class="card-body">
                                 <h5 class="card-title">4 BHK Apartments</h5>
                                 <ul class="list-unstyled">
@@ -537,359 +494,135 @@
                 </div>
             </div>
 
-            <!-- ==============================Pricing Snapshot (Indicative)========================================== -->
-            <div class="container my-5">
-                <h2 class="ms-3">Pricing Snapshot (Indicative)</h2>
-                <p class="text-muted ms-3">Indicative pricing as per builder quotes, portals & resale trends.</p>
+            <!-- ======================================Price List===================================  -->
+            <section class="price-section">
+                <div class="container">
+                    <h2>Price List</h2>
 
-                <div class="row g-4">
-
-                    <!-- 3 BHK -->
-                    <div class="col-md-4">
-                        <div class="card shadow-sm h-100 text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">3 BHK</h5>
-                                <p class="card-text">Size: <strong>3,011 – 3,047 sq. ft</strong></p>
-                                <h4 class="text-primary">₹5.42 – 5.48 Cr</h4>
-                                <p class="text-muted">Approx. ₹16,400 – 27,000/sq.ft</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4 BHK -->
-                    <div class="col-md-4">
-                        <div class="card shadow-sm h-100 text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">4 BHK</h5>
-                                <p class="card-text">Size: <strong>3,905 – 4,145 sq. ft</strong></p>
-                                <h4 class="text-primary">₹7.03 – 7.46 Cr</h4>
-                                <p class="text-muted">Approx. ₹16,500 – 27,000/sq.ft</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Duplex -->
-                    <div class="col-md-4">
-                        <div class="card shadow-sm h-100 text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Duplex</h5>
-                                <p class="card-text">Size: <strong>~3,500+ sq. ft</strong></p>
-                                <h4 class="text-warning">On Request</h4>
-                                <p class="text-muted">Exclusive limited units</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="alert alert-info mt-4" role="alert">
-                    <strong>Note:</strong> Pricing varies by floor, view & furnishing.
-                    Some <strong>resale listings</strong> show entry prices from ₹2.69 Cr onwards.
-                </div>
-            </div>
-
-
-            <!-- =============================Quick Takeaways============================== -->
-            <div class="container my-5 " data-aos="fade-up" id="quick">
-                <h2 class="text-center mb-4">Quick Takeaways</h2>
-
-                <div class="card shadow-lg border-0 rounded-4">
-                    <div class="card-body p-4">
-                        <ul class="list-group list-group-flush">
-
-                            <li class="list-group-item py-3 d-flex align-items-center">
-                                <i class="bi bi-graph-up-arrow text-primary fs-4 me-3"></i>
-                                <span><strong>Efficiency:</strong> 3 BHK is best for value-conscious buyers.</span>
-                            </li>
-
-                            <li class="list-group-item py-3 d-flex align-items-center">
-                                <i class="bi bi-gem text-success fs-4 me-3"></i>
-                                <span><strong>Luxury & Prestige:</strong> Duplex & 4 BHK units cater to HNIs and
-                                    long-term premium investors.</span>
-                            </li>
-
-                            <li class="list-group-item py-3 d-flex align-items-center">
-                                <i class="bi bi-building-up text-warning fs-4 me-3"></i>
-                                <span><strong>Resale / Investment:</strong> Lower floors may offer better efficiency,
-                                    while higher floors fetch higher resale due to golf-course views.</span>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- ===================================== Current Price Overview ==================================== -->
-            <div class="container my-5" id="current">
-                <h2 class="text-center mb-4">Current Price Overview</h2>
-
-                <!-- 1. Builder / Primary Market -->
-                <div class="card shadow-lg mb-4 border-0 rounded-4">
-                    <div class="card-body p-4">
-                        <h5 class="card-title text-primary fw-bold">
-                            1️⃣ Builder / Primary Market
-                            <small class="text-muted d-block fs-6">(Housing.com, official sources)</small>
-                        </h5>
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item py-3">
-                                <strong>3 BHK (2,007–2,031 sq.ft)</strong> → ₹5.42–6.5 Cr →
-                                <em class="text-muted">~₹26,500–27,000 per sq.ft</em>
-                            </li>
-                            <li class="list-group-item py-3">
-                                <strong>4 BHK (2,603–2,763 sq.ft)</strong> → ₹7.03–8.9 Cr →
-                                <em class="text-muted">~₹26,500–27,000 per sq.ft</em>
-                            </li>
-                            <li class="list-group-item py-3">
-                                <strong>Duplex (3,500+ sq.ft)</strong> → Price on request (~₹9–10.5 Cr) →
-                                <em class="text-muted">~₹26,000+ per sq.ft</em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 2. Resale Market -->
-                <div class="card shadow-lg mb-4 border-0 rounded-4">
-                    <div class="card-body p-4">
-                        <h5 class="card-title text-success fw-bold">
-                            2️⃣ Resale Market
-                            <small class="text-muted d-block fs-6">(99acres, MagicBricks, NoBroker)</small>
-                        </h5>
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item py-3">
-                                <strong>3 BHK (≈2,000 sq.ft)</strong>
-                                <br>• ₹4.0 Cr → <em>~₹20,000 per sq.ft</em>
-                                <br>• ₹4.6 Cr → <em>~₹22,500 per sq.ft</em>
-                            </li>
-                            <li class="list-group-item py-3">
-                                <strong>4 BHK (≈2,700 sq.ft)</strong>
-                                <br>• ₹5.8 Cr → <em>~₹21,500 per sq.ft</em>
-                                <br>• ₹6.2 Cr → <em>~₹22,800 per sq.ft</em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 3. Market Trend & Appreciation -->
-                <div class="card shadow-lg border-0 rounded-4">
-                    <div class="card-body p-4">
-                        <h5 class="card-title text-warning fw-bold">
-                            3️⃣ Market Trend & Appreciation
-                        </h5>
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item py-3">
-                                <strong>Primary Market:</strong> steady at ~₹26,500–27,000 per sq.ft
-                            </li>
-                            <li class="list-group-item py-3">
-                                <strong>Resale Market:</strong> lower, ₹20,000–23,000 per sq.ft depending on floor,
-                                tower & payment stage
-                            </li>
-                            <li class="list-group-item py-3">
-                                <strong>Price Appreciation:</strong> ~8–10% annually over last 2–3 years (sector
-                                average)
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ==========================================new section========================================== -->
-            <!-- Customer Preferences Section -->
-            <div class="container my-5 kv-section" id="customer">
-                <h2 class="text-center mb-4">Customer Preferences in Buying Apartments</h2>
-
-                <!-- Floor Preference -->
-                <div class="mb-5 reveal">
-                    <h4 class="kv-badge text-white d-inline-block px-3 py-1 rounded">1. Floor Preference</h4>
-                    <div class="row g-4 mt-3">
-
-                        <!-- High Floors -->
+                    <div class="row g-4 justify-content-center">
+                        <!-- 3 BHK -->
                         <div class="col-md-4">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> High Floors (25th+)</h5>
-                                    <p><strong>Preferred by:</strong> NRIs, HNIs, investors</p>
-                                    <ul>
-                                        <li>Panoramic golf-course views</li>
-                                        <li>Less dust & traffic noise</li>
-                                        <li>Prestige, privacy, ventilation</li>
-                                    </ul>
-                                    <p class="text-danger small">Concerns: Higher temperature, full lift dependency
-                                    </p>
-                                </div>
+                            <div class="price-card">
+                                <h5>3 BHK + 3 Toilet</h5>
+                                <p><strong>Size :</strong> 3,011 – 3,047 sq. ft</p>
+                                <p><strong>Price :</strong> ₹5.42 – 5.48 Cr</p>
+                                <button class="btn">Request A Call &#8599;</button>
                             </div>
                         </div>
 
-                        <!-- Middle Floors -->
+                        <!-- 4 BHK -->
                         <div class="col-md-4">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> Middle Floors (10th–20th)</h5>
-                                    <p><strong>Preferred by:</strong> Families, couples, elderly parents</p>
-                                    <ul>
-                                        <li>Balance of accessibility & views</li>
-                                        <li>Moderate pricing</li>
-                                        <li>Easier evacuation in emergencies</li>
-                                    </ul>
-                                    <p class="text-danger small">Concerns: Noise from neighbors, not as premium</p>
-                                </div>
+                            <div class="price-card">
+                                <h5>4 BHK + 4 Toilet</h5>
+                                <p><strong>Size :</strong> 3,905 – 4,145 sq. ft</p>
+                                <p><strong>Price :</strong> ₹7.03 – 7.46 Cr</p>
+                                <button class="btn">Request A Call &#8599;</button>
                             </div>
                         </div>
 
-                        <!-- Lower Floors -->
+                        <!-- Duplex -->
                         <div class="col-md-4">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> Lower Floors (Ground–5th)</h5>
-                                    <p><strong>Preferred by:</strong> Seniors, pet owners, families with toddlers
-                                    </p>
-                                    <ul>
-                                        <li>Easy access without lifts</li>
-                                        <li>Private garden/terrace options</li>
-                                        <li>Convenience for pets & strollers</li>
-                                    </ul>
-                                    <p class="text-danger small">Concerns: More dust, lesser resale value</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Apartment Facing -->
-                <div class="mb-5 reveal">
-                    <h4 class="kv-badge text-white d-inline-block px-3 py-1 rounded">2. Apartment Facing</h4>
-                    <div class="row g-4 mt-3">
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> East-Facing Units</h5>
-                                    <ul>
-                                        <li>Preferred by Vastu-conscious buyers & NRIs</li>
-                                        <li>Cooler afternoons, auspicious in Vastu</li>
-                                        <li>Higher resale demand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> West-Facing Units</h5>
-                                    <ul>
-                                        <li>Preferred by modern buyers, younger families</li>
-                                        <li>Evening sunlight, slightly lower cost</li>
-                                        <li>Good for golf-course view lovers</li>
-                                    </ul>
-                                    <p class="text-danger small">Concerns: Warmer summers, higher AC usage</p>
-                                </div>
+                            <div class="price-card">
+                                <h5>Luxury Duplex</h5>
+                                <p><strong>Size :</strong> 3,500+ sq. ft</p>
+                                <p><strong>Price :</strong> Pricing on request</p>
+                                <button class="btn">Request A Call &#8599;</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Other Key Factors -->
-                <div class="mb-5 reveal">
-                    <h4 class="kv-badge text-white d-inline-block px-3 py-1 rounded">3. Other Key Factors</h4>
-                    <div class="row g-4 mt-3">
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> View Premium</h5>
-                                    <p>Golf-course facing = maximum prestige & resale.<br> Internal-facing =
-                                        affordable luxury.</p>
+
+            <!-- ============================projects=========================== -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section class="container">
+                    <h1 class="text-center mb-4">Project</h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+                                <h4 class="card-title mt-4 ms-3">Kalpataru Vista</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn my-btn mb-2">Explore Project</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> Vastu Compliance</h5>
-                                    <p>East/North-East entrances preferred. 13th floor often avoided.</p>
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+                                <h4 class="card-title mt-3 ms-3">GYGY</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn my-btn mb-2">Explore Project</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> Family Needs</h5>
-                                    <p>4 BHK/Duplex for big families. 3 BHK for nuclear families. Lower floors for
-                                        seniors/pet owners.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card kv-card h-100">
-                                <div class="card-body">
-                                    <h5> Investment Angle</h5>
-                                    <p>High floors + East-facing + golf-view = fastest resale.<br> Mid-floor =
-                                        steady rental yield.</p>
+                        <div class="col-4">
+                            <div class="card project-card">
+                                <img src="assets/img/home6.avif" class="card-img-top" height="100vh" alt="Project">
+                                <h4 class="card-title mt-4 ms-3">ATS Picturesque Reprieves</h4>
+                                <div class="card-body d-flex justify-content-between">
+                                    <p class="price mt-2">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn my-btn mb-2">Explore Project</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+            </div>
+            <!-- gallery  -->
+            <div class="container py-5">
+                <h1 class="heading">Gallery</h1>
 
-                <!-- Summary Table -->
-                <div class="reveal" id="preferences">
-                    <h4 class="kv-badge text-white d-inline-block px-3 py-1 rounded">Summary of Preferences</h4>
-                    <div class="table-responsive mt-3">
-                        <table class="table table-bordered text-center align-middle">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Factor</th>
-                                    <th>Preferred By</th>
-                                    <th>Why</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>High Floors</td>
-                                    <td>NRIs, investors</td>
-                                    <td>Views, resale premium</td>
-                                </tr>
-                                <tr>
-                                    <td>Mid Floors</td>
-                                    <td>Families, elderly</td>
-                                    <td>Balance of access & views</td>
-                                </tr>
-                                <tr>
-                                    <td>Low Floors</td>
-                                    <td>Seniors, pet owners</td>
-                                    <td>Daily convenience</td>
-                                </tr>
-                                <tr>
-                                    <td>East Facing</td>
-                                    <td>Vastu buyers, NRIs</td>
-                                    <td>Auspicious, cooler, resale advantage</td>
-                                </tr>
-                                <tr>
-                                    <td>West Facing</td>
-                                    <td>Modern families</td>
-                                    <td>Lower cost, evening light</td>
-                                </tr>
-                                <tr>
-                                    <td>Golf View</td>
-                                    <td>Premium buyers</td>
-                                    <td>Maximum prestige & resale</td>
-                                </tr>
-                                <tr>
-                                    <td>Internal View</td>
-                                    <td>Budget buyers</td>
-                                    <td>Affordable luxury</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="gallery-image row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-1.jpg" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-2.jpg" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-3.png" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-4.webp" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-5.webp" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                            <img src="assets/img/vista-6.webp" alt="" class="img-fluid" />
+                            <div class="transparent-box"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Animation CSS -->
-            <style>
+            <!-- <style>
                 .kv-section {
                     background: #f8f9fa;
                     border-radius: 1.25rem;
@@ -916,7 +649,7 @@
                     opacity: 1;
                     transform: translateY(0);
                 }
-            </style>
+            </style> -->
 
             <!-- Animation Script -->
             <script>
@@ -1004,6 +737,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
 <script>
     AOS.init();

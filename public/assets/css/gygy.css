@@ -1,0 +1,237 @@
+
+h1 {
+    color: rgb(102, 133, 179);
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.uniform-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.uniform-card h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.uniform-card p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.uniform-card button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  } */
+   .reviews-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.market-snapshot-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.market-snapshot-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.market-snapshot-section h2 {
+  width: 100%;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.market-content {
+  flex: 2;
+}
+
+.market-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.market-content li strong {
+  color: #000;
+}
+
+.market-image {
+  flex: 1;
+}
+
+.market-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .market-snapshot-section .container {
+    flex-direction: column;
+  }
+
+  .market-image {
+    margin-top: 20px;
+  }
+}
+
+/* price card  */
+.price-card {
+    background: #fff;
+    color: #333;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+/* .price-card h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+} */
+ h5{
+  font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+ }
+
+.price-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.price-card .btn {
+    background-color: rgb(102, 133, 179);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+
+ /* Features & Amenities */
+.amenities {
+  background-color: rgb(215, 224, 236);
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-grow: 1;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-icon {
+  font-size: 40px;
+  color: #007b8f;
+  margin-bottom: 15px;
+}
+
+.amenity-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.amenity-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+ /* gallery css */
+
+#exampleLightbox .modal-dialog {
+    max-width: 900px; /* adjust as needed */
+}
+#exampleLightbox .carousel-inner img {
+    max-height: 80vh; /* images won’t exceed 80% of viewport height */
+    object-fit: contain; /* keeps aspect ratio without stretching */
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}

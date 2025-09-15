@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/admin.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,19 +15,29 @@
 </head>
 
 <body style="background: #c6e7fd">
-  <nav class="navbar navbar-expand-lg fixed-top" style=" background: rgb(102, 133, 179)">
-    <a href="#" class="ms-5 navbar-brand text-light">Elite Partners Spaces</a>
-    <ul class="nav justify-content-end me-4">
-      <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="page" href="admin-login.html">Admin Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="page" href="admin-signup.html">Admin Singup</a>
-      </li>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-custom-main">
+        <div class="container">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <!-- <span>Explore Realty</span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="admin-login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </nav>
 
 
   <div class="container">

@@ -30,6 +30,8 @@ app.use("/contact", contactRoute);
 const authRoute = require("./routes/auth");
 app.use("/auth", authRoute);
 
+const propertyRoutes = require('./routes/propertyRoutes'); // ✅ correct
+app.use('/api/properties', propertyRoutes);
 
 
 // Server start

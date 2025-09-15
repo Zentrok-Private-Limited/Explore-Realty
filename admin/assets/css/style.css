@@ -1,0 +1,36 @@
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font {
+  font-size: 19px;
+}
+/* navbar css */
+
+ 
+
+ .navbar-custom-main {
+     background-color: rgb(102, 133, 179);
+     height: 12vh;
+ }
+
+ /* .navbar-brand img {
+     height: 52px;
+     margin-bottom: 10px;
+     margin-right: 10px;
+ } */
+
+ .navbar-nav .nav-link {
+     color: white;
+ }
+
+ .navbar-nav .nav-link:hover {
+     color: #ddd;
+ }
+ /* navbar css end  */

@@ -2,43 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Elite Partners spaces</title>
-    <style>
-  .text-danger:hover {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/logo3.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Elite Partners spaces</title>
+  <style>
+    /* .text-danger:hover {
     font-weight: 700;
     transform: scale(1.30); /* thoda zoom effect */
-    transition: 0.2s;
-  }
-</style>
+    /* transition: 0.2s; */
+    /* } */
+  </style>
 </head>
 
 <body style="background: #c6e7fd">
-    <nav class="navbar navbar-expand-lg fixed-top" style=" background: rgb(102, 133, 179)">
-        <a href="#" class="ms-5 navbar-brand text-light">Elite Partners Spaces</a>
-        <ul class="nav justify-content-end me-4">
-            <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="admin-subscribe.html">Subscribe</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="admin-contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Admin Logout</a>
-            </li>
-        </ul>
-
-    </nav>
-
+  <nav>
     <div class="container">
+      <a class="navbar-brand text-white d-flex align-items-center" href="#">
+        <!-- <img src="assets/img/logo.jpeg" alt="Explore Realty Logo"> -->
+        <!-- <span>Explore Realty</span> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="admin-subscribe.html">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin-contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-property.html">Add Property</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <div class="container">
         <h3>📩 Contact List</h3>
         <div class="table-responsive">
             <table class="table table-striped align-middle text-center">
@@ -106,7 +117,7 @@
       console.error("❌ Error deleting contact:", err);
     }
   }
-</script>
+</script> -->
 </body>
 
 </html>
