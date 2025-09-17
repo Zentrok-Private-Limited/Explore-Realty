@@ -162,7 +162,7 @@ h1, .h1 {
 }
 
 .dashboard-nav {
-    margin-top: 49px;
+    margin-top: 103px;
     /* margin-left: 5px; */
     background-color: rgb(110, 147, 202);
     /* margin-bottom: 10px; */
@@ -288,6 +288,9 @@ h1, .h1 {
 .overview {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+}
+#overview{
+    margin-top: -70px;
 }
 
 /* ==================carousel css================ */

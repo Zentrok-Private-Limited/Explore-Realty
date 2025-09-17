@@ -1,0 +1,36 @@
+ /* Navbar styling */
+    .navbar-custom-main {
+      background-color: rgb(102, 133, 179);
+      height: 15vh;
+    }
+
+    .navbar-brand img {
+      height: 90px;
+    }
+
+    .navbar-nav {
+      font-size: 1.2rem;
+    }
+
+    .mbtn {
+      font-size: 1.8rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ddd;
+    }
+
+    /* Fix dropdown overflow */
+    .navbar .dropdown-menu {
+      right: 0;
+      left: auto;
+    }
+
+    /* Optional: Dropdown hover effect (if needed) */
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+    }

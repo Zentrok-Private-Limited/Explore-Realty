@@ -22,7 +22,7 @@ const testimonials = [
     name: "Why Choose Us",
     // designation: "Satisfied Customer",
     src:
-      "assets/img/ratul-ghosh-J55Otnola1c-unsplash.jpg"
+      "assets/img/ats-12.jpg"
   }
 ];
 

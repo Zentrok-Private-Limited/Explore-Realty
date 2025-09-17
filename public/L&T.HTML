@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/l&t.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Explore Realty</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-4">
+            <!-- Left: Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right: Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav" role="navigation" aria-label="Sidebar">
+            <nav class="dashboard-nav-list">
+                <a href="#overview" class="dashboard-nav-item active"><span class="nav-label">Overview</span></a>
+
+                <a href="#pricing" class="dashboard-nav-item"></i><span class="nav-label">Apartment Pricing</span></a>
+
+                <a href="#amenities" class="dashboard-nav-item"></i><span class="nav-label">Amenities </span></a>
+
+                <a href="#location" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
+                <a href="#summary" class="dashboard-nav-item"><span class="nav-label">Summary</span></a>
+                <a href="#internal" class="dashboard-nav-item"><span class="nav-label">Internal</span></a>
+                <a href="#pricing" class="dashboard-nav-item"><span class="nav-label">Pricing</span></a>
+                <a href="#quick" class="dashboard-nav-item"><span class="nav-label">Quick Takeaways</span></a>
+                <a href="#current" class="dashboard-nav-item"><span class="nav-label">Current</span></a>
+                <a href="#customer" class="dashboard-nav-item"><span class="nav-label">Customer</span></a>
+                <a href="#preferences" class="dashboard-nav-item"><span class="nav-label">Preferences</span></a>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <div class="row">
+                    <img src="assets/img/l&t-3.jpg" class="img-fluid ms-3"
+                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
+                </div>
+
+                <h1 class="divino d-flex justify-content-center mt-4">L&T GREEN RESERVE</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <div class="container-fluid overview  rounded">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span> UPRERAPRJ459796/09/2025</p>
+                            <p><span class="fw-bold">Launch Date:</span> To Be Confirmed (TBC)</p>
+                            <p><span class="fw-bold">Project Units:</span> 600-617 units</p>
+                            <p><span class="fw-bold">Total Floors</span> Up to 45 floors</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Developer:</span> L&T Realty (real estate arm of Larsen & Toubro)
+                            </p>
+                            <p><span class="fw-bold">Project Area:</span> 6 acres (~24,281 sq.m), with 4 towers </p>
+                            </p>
+                            <p><span class="fw-bold">Total Towers:</span> 4 towers (G+45)</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Location:</span>Noida–Greater Noida Expressway
+                            <p><span class="fw-bold">Configurations:</span> 3, 4 & 5 BHK </p>
+                            <p><span class="fw-bold">Project Type:</span> RESIDENTIAL</p>
+                            <div class="exploreRealty">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-white text-decoration-none ms-2">Contact explore Realty Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================--------------about L & T----------============== -->
+            <section class="testimonials">
+                <section class="container">
+                    <div class="item item1">
+                        <div class="title text-center">Welcome to L&T Green Reserve </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="description">L&T Green Reserve is a premium residential project by Larsen & Toubro
+                            Realty, offering a perfect blend of modern living and nature. Thoughtfully designed with
+                            eco-friendly features and lush green surroundings, it promotes a lifestyle of comfort,
+                            wellness, and sustainability.</div>
+                    </div>
+                    <div class="item item3">
+                        <img src="assets/img/l&t-9.webp" alt="Image 1">
+                    </div>
+                    <div class="item item4">
+                        <img src="assets/img/l&t-8.avif" alt="Image 2">
+                    </div>
+                    <div class="item item5">
+                        <img src="assets/img/l&t-4.jpeg" alt="Image 3">
+                    </div>
+                    <div class="item item6">
+                        <div class="description">Located in a well-connected area, Green Reserve provides residents with
+                            a peaceful environment, smart design, and top-class amenities — all while staying close to
+                            the city.
+                            <span> Live green. Live better — at L&T Green Reserve.</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <div class="container-fluid my-5" id="pricing">
+                <h2 class="text-center mb-4">Apartment Configurations & Pricing</h2>
+                <div class="row g-4"> <!-- g-4 adds gutter spacing -->
+
+                    <!-- 3 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="3 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="3 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK Residences</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 2,850–3,500 sq ft <br />
+                                    <strong>Price:</strong> ₹4.8 Cr – ₹6.3 Cr <br />
+                                    <small>(~₹18,000–20,000/sq ft)</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="4 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="4 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">4 BHK Residences</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 3,550–4,200 sq ft <br />
+                                    <strong>Price:</strong> ₹6.3 Cr – ₹8.25 Cr+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="5 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="5 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">5 BHK Residences</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 5,100–5,700 sq ft <br />
+                                    <strong>Price:</strong> ₹8.25 Cr – ₹11.44 Cr
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ======================================Amenities===================================  -->
+            <section class="amenities-section py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center mb-4">Amenities & Lifestyle Experience</h2>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-tree-fill display-4 text-success mb-3"></i>
+                            <h5>Green Landscaping</h5>
+                            <p>Enjoy lush greenery, manicured gardens, and open spaces designed for relaxation and
+                                sustainability.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-droplet-half display-4 text-primary mb-3"></i>
+                            <h5>Infinity Swimming Pool</h5>
+                            <p>Cool off in a luxurious infinity-edge pool with scenic views of the surrounding reserve.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-lightning-charge-fill display-4 text-warning mb-3"></i>
+                            <h5>Power Backup</h5>
+                            <p>Uninterrupted lifestyle with 24/7 power backup and high-end energy-efficient systems.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-shield-lock-fill display-4 text-danger mb-3"></i>
+                            <h5>Gated Security</h5>
+                            <p>Feel safe with 3-tier security systems, CCTV surveillance, and smart access control.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-bicycle display-4 text-info mb-3"></i>
+                            <h5>Fitness & Cycling Tracks</h5>
+                            <p>Dedicated jogging, cycling, and fitness zones to keep your body and mind in shape.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-house-door-fill display-4 text-secondary mb-3"></i>
+                            <h5>Clubhouse & Lounge</h5>
+                            <p>Premium clubhouse with indoor games, lounge, reading rooms, and multipurpose hall.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==============================gallery========================  -->
+            <h2 class="gallery">Gallery</h2>
+            <section class="c-gallery m-3">
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg" alt="">
+                </div>
+
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" alt="">
+                </div>
+
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg" alt="">
+                </div>
+
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/1481309/pexels-photo-1481309.jpeg" alt="">
+                </div>
+
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/736355/pexels-photo-736355.jpeg" alt="">
+                </div>
+
+                <div class="c-gallery__item">
+                    <img src="https://images.pexels.com/photos/2651794/pexels-photo-2651794.jpeg" alt="">
+                </div>
+            </section>
+            <!-- ==================================design,architecture=================================  -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <h2 class="text-center text-3xl font-bold mb-4">Design, Architecture & Sustainability</h2>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-building display-5 text-primary mb-3"></i>
+                            <h5>Modern Architecture</h5>
+                            <p>Contemporary design with clean lines, spacious layouts, and abundant natural light.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-tree-fill display-5 text-success mb-3"></i>
+                            <h5>Eco-Friendly Planning</h5>
+                            <p>Low carbon footprint construction, green roofs, and sustainable landscaping.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-lightning-charge-fill display-5 text-warning mb-3"></i>
+                            <h5>Energy Efficiency</h5>
+                            <p>Solar panels, rainwater harvesting, LED lighting, and optimized ventilation systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================projects============================ -->
+          <section class="projects-section py-5">
+        <div class="container">
+            <div class="d-flex mb-4 justify-content-between align-items-center">
+                <h2>Projects</h2>
+                <a href="properties.html" class="btn more-btn text-white"  style="background-color: rgb(76, 106, 151);">View More</a>
+            </div>
+
+            <div class="row">
+
+                <!-- Project Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kalpataru Vista</h5>
+                            <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                            <a href="kalpataru-vista.html" class="btn btn-primary mt-auto">Explore Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">GYGY</h5>
+                            <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                            <a href="gygy.html" class="btn btn-primary mt-auto">Explore Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                            <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                            <a href="ats.html" class="btn btn-primary mt-auto">Explore Project</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+            <!-- ======================================legal & Investment========================================== -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center text-3xl font-bold mb-4">Legal & Investment Perspective</h2>
+
+                    <div class="row text-center mt-3">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-file-earmark-check-fill display-5 text-success mb-3"></i>
+                            <h5>RERA Compliant</h5>
+                            <p>Fully registered under RERA, ensuring transparency and legal protection for homebuyers.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-currency-rupee display-5 text-primary mb-3"></i>
+                            <h5>High ROI Zone</h5>
+                            <p>Located in a high-appreciation corridor of Noida, offering strong rental and resale
+                                potential.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-bank2 display-5 text-warning mb-3"></i>
+                            <h5>Home Loan Approved</h5>
+                            <p>Approved by major banks & NBFCs, making financing options simple and hassle-free.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================floor Preference in L&T Green reserve================================ -->
+            <div class="container">
+
+                <div class="main-box">
+                    <h2>Floor Preference in L&T Green Reserve</h2>
+                </div>
+
+                <div class="grid-container">
+
+                    <div class="box">
+                        <h3> High Floors (30th–45th)</h3>
+                        <p><strong>Preferred by:</strong> NRIs, HNIs, young professionals, investors.</p>
+                        <ul>
+                            <li> * Stunning panoramic golf-course & skyline views.</li>
+                            <li> * Less noise & dust from the expressway.</li>
+                            <li> * More sunlight, breezier atmosphere.</li>
+                            <li> * Higher prestige → premium resale value.</li>
+                            <li> * Heat exposure in peak summers (though glass façade is insulated).</li>
+                            <li> * Dependency on lifts (though project has multiple high-speed lifts + full power
+                                backup).</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h3>Middle Floors (15th–29th)</h3>
+                        <p><strong>Preferred by:</strong> Families with kids, working couples, elderly parents.</p>
+                        <ul>
+                            <li> * Balanced sunlight & ventilation.</li>
+                            <li> * Easy accessibility (not too dependent on lifts).</li>
+                            <li> * Quieter than lower floors but more affordable than top floors.</li>
+                            <li> * Not as exclusive as higher floors.</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h3> Lower Floors (Ground–14th)</h3>
+                        <p><strong>Preferred by:</strong> Senior citizens, families with toddlers, pet owners.</p>
+                        <ul>
+                            <li> * Quick access to gardens, clubhouse, and sports courts.</li>
+                            <li> * Easier in emergencies (faster evacuation).</li>
+                            <li> * Convenient for daily chores.</li>
+                            <li> * Higher noise & dust from expressway.</li>
+                            <li> * Less premium in resale compared to higher floors.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ========================location======================== -->
+            <div class="container my-5">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5437200045844!2d77.35773037549677!3d28.523372575724594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce70043c259bf%3A0xdbefc6f96bb90b80!2sL%26T%20Green%20Reserve!5e0!3m2!1sen!2sin!4v1758099748533!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>Positioned right off the Noida–Greater Noida Expressway, the project offers exceptional connectivity:</em></p>
+                        <p><em>• 1 km to expressway </em></p>
+                        <p><em>• Nearby landmarks:</em></p>
+                        <p><em>1. Amity University (~3 km) </em></p>
+                        <p><em>2. Jaypee Hospital (~2–4.5 km) </em></p>
+                        <p><em>3. DLF Mall of India (~6 km) </em></p>
+                        <p><em>4. Botanical Garden Metro (~7–8 km) </em></p>
+                        <p><em>5. Sector 18 Market (~6–7 km) </em></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer" style="position: relative; z-index: 10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="single_footer">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Property Sale</a></li>
+                            <li><a href="#">Property Purchase</a></li>
+                            <li><a href="#">The printing and typesetting </a></li>
+                            <li><a href="#">Property Rent / Lease</a></li>
+                            <li><a href="#">Resale Assistance</a></li>
+                            <li><a href="#">Luxury Homes / Villas</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Page Link</h4>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Simply dummy text</a></li>
+                            <li><a href="#">The printing and typesetting </a></li>
+                            <li><a href="#">Standard dummy text</a></li>
+                            <li><a href="#">Type specimen book</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Subscribe today</h4>
+                        <div class="signup_form">
+                            <form id="subscribeForm" class="subscribe">
+                                <input class="subscribe__input" type="email" id="emailInput" name="email"
+                                    placeholder="Enter Email Address" required>
+                                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
+                            </form>
+                            <p id="msg"></p>
+                            <script src="assets/js/subscribe.js"></script>
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-google"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="copyright">Copyright © 2025.</p>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+
+
+
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

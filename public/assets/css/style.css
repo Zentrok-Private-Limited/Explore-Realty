@@ -12,33 +12,6 @@ body {
 .font {
   font-size: 19px;
 }
-/* navbar css */
-
- .navbar-custom-top {
-     background-color: #c6e7fd;
-     color: white;
-     /* padding: 0.5rem 1rem; */
- }
-
- .navbar-custom-main {
-     background-color: rgb(102, 133, 179);
-     height: 10vh;
- }
-
- .navbar-brand img {
-     height: 90px;
-     margin-bottom: 40px;
-     margin-right: 10px;
- }
-
- .navbar-nav .nav-link {
-     color: white;
- }
-
- .navbar-nav .nav-link:hover {
-     color: #ddd;
- }
- /* navbar css end  */
 
  /* properties search  */
 /* Container Style */
@@ -263,7 +236,7 @@ body {
 
 
 /* tag hanging css */
-:root {
+/* :root {
   --accent: #043563;
   --tilt-x: 0deg;
   --tilt-y: 0deg;
@@ -277,10 +250,9 @@ body {
   position: fixed;
   z-index: 9999;
   top: -40px;
-  /* taaki sab elements ke upar rahe */
-}
+} */
 
-.hanger {
+/* .hanger {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -290,23 +262,16 @@ body {
 
 .string {
   width: 6px;
-  /* rope ki motai */
   height: 120px;
-  /* lambi */
   margin: 0 auto;
   background: repeating-linear-gradient(45deg,
-      /* angle */
       #c8a165,
-      /* rope color light */
       #c8a165 4px,
-      /* stripe size */
       #8b5e2a 4px,
-      /* rope color dark */
       #8b5e2a 8px);
   border-radius: 10px;
 
   background-color: #444;
-  /* dark dori */
   margin: 0 auto;
 }
 
@@ -371,13 +336,12 @@ body {
   background: none;
   border: none;
   color: #000;
-  /* same color, no change */
   text-decoration: none;
-}
+} */
 
 
 /* Swing Animation */
-@keyframes swing {
+/* @keyframes swing {
   0% {
     transform: rotate(-6deg);
   }
@@ -389,21 +353,17 @@ body {
   100% {
     transform: rotate(-6deg);
   }
-}
+} */
 
 
-.strategy-card {
+/* .strategy-card {
   color: #fff;
-  /* text visible rahe */
   background-size: cover;
   background-position: center;
   border-radius: 15px;
   overflow: hidden;
-}
-
-/* body{
-  padding: 2rem 0rem;
 } */
+
 .card-img-overlay {
   background-color: rgba(#000, 0.4);
 }
@@ -746,4 +706,11 @@ iframe {
   .map-container {
     margin-bottom: 30px;
   }
+}
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+.my-btn{
+  background-color: rgb(76, 106, 151);
 }
