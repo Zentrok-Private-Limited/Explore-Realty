@@ -70,6 +70,7 @@
 
 
 .dashboard-nav-list {
+    margin-top: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -104,17 +105,30 @@
 .active {
     background: rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-.nav-item-divider {
-    height: 1px;
-    margin: 1rem 0;
-    overflow: hidden;
-    background-color: rgba(236, 238, 239, 0.3);
+.exploreRealty {
+    background-color: #284069;
+    width: fit-content;
+    padding: 3px 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
+.exploreRealty:hover {
+    background-color: #1f3050;
+}
+.overview {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.divino {
+    background-color: #284069;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
 @media (min-width: 992px) {
     .dashboard-app {
         margin-left: 238px;

@@ -20,7 +20,7 @@
     -webkit-flex-grow: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
-    margin-top: 87px;
+    margin-top: 110px;
 }
 
 .dashboard-content {
@@ -38,9 +38,8 @@
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    background-color: rgb(110, 147, 202);
-    z-index: 1;
-    /* sidebar ko peeche bhejne ke liye kam value */
+    background-color:  rgb(110, 147, 202);
+    z-index: 1; /* sidebar ko peeche bhejne ke liye kam value */
     /* padding-bottom: 70px;  footer space ke liye */
 }
 
@@ -58,7 +57,7 @@
 }
 
 .dashboard-nav {
-    margin-top: 95px;
+    margin-top: 90px;
     /* margin-left: 5px; */
     background-color: rgb(110, 147, 202);
     /* margin-bottom: 10px; */
@@ -71,6 +70,7 @@
 
 
 .dashboard-nav-list {
+  margin-top: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -105,19 +105,30 @@
 .active {
     background: rgba(0, 0, 0, 0.1);
 }
-
-
-#overview{
-    margin-top: 20px;
+.exploreRealty {
+    background-color: #284069;
+    width: fit-content;
+    padding: 3px 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.nav-item-divider {
-    height: 1px;
-    margin: 1rem 0;
-    overflow: hidden;
-    background-color: rgba(236, 238, 239, 0.3);
+.exploreRealty:hover {
+    background-color: #1f3050;
 }
-
+.overview {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.divino {
+    background-color: #284069;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
 @media (min-width: 992px) {
     .dashboard-app {
         margin-left: 238px;
@@ -158,12 +169,6 @@
         display: -ms-flexbox;
         display: flex;
     }
-}
-.divino {
-    background-color: #284069;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
 }
 
 .elite {
