@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ivory.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Explore Realty</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-4">
+            <!-- Left: Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right: Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav" role="navigation" aria-label="Sidebar">
+            <nav class="dashboard-nav-list">
+                <a href="#overview" class="dashboard-nav-item active"><span class="nav-label">Overview</span></a>
+
+                <a href="#pricing" class="dashboard-nav-item"></i><span class="nav-label">Apartment Pricing</span></a>
+
+                <a href="#amenities" class="dashboard-nav-item"></i><span class="nav-label">Amenities </span></a>
+
+                <a href="#location" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
+                <a href="#summary" class="dashboard-nav-item"><span class="nav-label">Summary</span></a>
+                <a href="#internal" class="dashboard-nav-item"><span class="nav-label">Internal</span></a>
+                <a href="#pricing" class="dashboard-nav-item"><span class="nav-label">Pricing</span></a>
+                <a href="#quick" class="dashboard-nav-item"><span class="nav-label">Quick Takeaways</span></a>
+                <a href="#current" class="dashboard-nav-item"><span class="nav-label">Current</span></a>
+                <a href="#customer" class="dashboard-nav-item"><span class="nav-label">Customer</span></a>
+                <a href="#preferences" class="dashboard-nav-item"><span class="nav-label">Preferences</span></a>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <div class="row">
+                    <img src="assets/img/ivory-9.jpg" class="img-fluid ms-3"
+                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
+                </div>
+
+                <h1 class="divino d-flex justify-content-center mt-4">Ivory County</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <div class="container-fluid overview  rounded">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA: Phase 1</span> UPRERAPRJ256314</p>
+                            <p><span class="fw-bold">RERA: Phase 2</span> UPRERAPRJ115902</p>
+                            <p><span class="fw-bold">RERA: Phase 3</span> UPRERAPRJ507062</p>
+                            <p><span class="fw-bold">Developer:</span>County Group (ABA Corp)
+                            <p><span class="fw-bold">Total Floors</span> Up to 45 floors</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Project Units:</span> approx 2,350 ‑ 2,400+</p>
+                            <p><span class="fw-bold"> Towers:</span> Around 22‑23</p>
+                            </p>
+                            <p><span class="fw-bold">Configurations:</span> Ultra‑luxury flats of 3 BHK, 4 BHK, 5 BHK
+                            </p>
+                            <p><span class="fw-bold">Project Area:</span> 28 acres </p>
+                            </p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+
+                            <p><span class="fw-bold">Launch Date:</span> To Be Confirmed (TBC)</p>
+                            <p><span class="fw-bold">Location:</span>“Ivory County, Sector 115, Noida
+                            <p><span class="fw-bold">Project Type:</span> RESIDENTIAL</p>
+                            <div class="exploreRealty">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-white text-decoration-none ms-2">Contact explore Realty Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================--------------about L & T----------============== -->
+            <section class="testimonials">
+                <section class="container">
+                    <div class="item item1">
+                        <div class="title text-center">Ivory County</div>
+                    </div>
+                    <div class="item item2">
+                        <div class="description">Ivory County is a premium residential project by County Group located
+                            in Sector 115, Noida. Spread across approximately 28 acres, it offers ultra-luxury 3, 4, and
+                            5 BHK apartments with world-class amenities and elegant design. </div>
+                    </div>
+                    <div class="item item3">
+                        <img src="assets/img/ivory-11.webp" alt="Image 1">
+                    </div>
+                    <div class="item item4">
+                        <img src="assets/img/ivory-14.jpg" alt="Image 2">
+                    </div>
+                    <div class="item item5">
+                        <img src="assets/img/ivory-7.jpg" alt="Image 3">
+                    </div>
+                    <div class="item item6">
+                        <div class="description">The project is
+                            RERA-registered and features spacious layouts, high-end finishes, and a host of lifestyle
+                            facilities like a clubhouse, swimming pool, and landscaped gardens. Strategically situated
+                            near major expressways and metro connectivity, Ivory County promises a blend of comfort,
+                            luxury, and modern urban living.
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <div class="container-fluid my-5" id="pricing">
+                <h2 class="text-center mb-4">Apartment Configurations & Pricing</h2>
+                <div class="row g-4"> <!-- g-4 adds gutter spacing -->
+
+                    <!-- 3 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/ivory-1.jpg" data-fancybox="floorplans"
+                                    data-caption="3 BHK Floor Plan">
+                                    <img src="assets/img/ivory-1.jpg" alt="3 BHK" class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK + 3T</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 2,034 ‑ 2,304 sq.ft <br />
+                                    <strong>Price:</strong> ₹ 2.85 Crore – ₹ 3.50 Crore <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/ivory-2.jpg" data-fancybox="floorplans"
+                                    data-caption="4 BHK Floor Plan">
+                                    <img src="assets/img/ivory-2.jpg" alt="4 BHK" class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">4 BHK Residences</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 2,727 ‑ 4,707 sq.ft + <br />
+                                    <strong>Price:</strong> ₹ 4.00 Crore – ₹ 8.50 Crore+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/ivory3.jpg" data-fancybox="floorplans"
+                                    data-caption="5 BHK Floor Plan">
+                                    <img src="assets/img/ivory3.jpg" alt="5 BHK" class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">5 BHK Residences</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong>  6,939 sq.ft <br />
+                                    <strong>Price:</strong>Starts around ₹ 10.50 Crore to ~ ₹ 12.80 Crore
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ======================================Amenities===================================  -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <h2 class="text-center fw-bold mb-5 text-uppercase text-dark" style="font-size: 2.5rem;">Amenities &
+                        Design Highlights</h2>
+
+                    <div class="row g-4 text-center">
+
+                        <!-- Luxury Amenities Card -->
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 shadow-sm h-100">
+                                <i class="bi bi-stars display-4 text-primary mb-3"></i>
+                                <h5 class="fw-semibold mb-3 text-uppercase">Luxury Amenities</h5>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>• Clubhouse, swimming pool, gym</li>
+                                    <li>• Tennis, badminton & squash courts</li>
+                                    <li>• Jogging & cycling tracks</li>
+                                    <li>• Yoga & meditation zones, amphitheatre</li>
+                                    <li>• Fluid restro, kids’ play area</li>
+                                    <li>• Sculpture gardens, animal parks, lakes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Design & Lifestyle Card -->
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 shadow-sm h-100">
+                                <i class="bi bi-brush display-4 text-success mb-3"></i>
+                                <h5 class="fw-semibold mb-3 text-uppercase">Design & Lifestyle</h5>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>• Resort-style architecture with lush greenery</li>
+                                    <li>• Nature-inspired landscaping & water features</li>
+                                    <li>• Modular kitchens & designer fittings</li>
+                                    <li>• UPVC windows & premium interior finishes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==============================gallery========================  -->
+
+            <!-- ==================================design,architecture=================================  -->
+
+
+            <!-- ================================projects============================ -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn text-white"
+                            style="background-color: rgb(76, 106, 151);">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================legal & Investment========================================== -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="p-4 border rounded-4 shadow-sm bg-white">
+                                <i
+                                    class="bi bi-exclamation-triangle-fill display-5 text-danger mb-3 d-block text-center"></i>
+                                <h5 class="fw-semibold mb-3 text-center text-uppercase">Sector 115, Noida – Key Issues
+                                </h5>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>• Limited access to markets, ATMs, petrol pumps, parks & government health
+                                        services</li>
+                                    <li>• Poor road conditions and waste management systems</li>
+                                    <li>• Low police visibility and general civic maintenance</li>
+                                    <li>• Resident concerns: Dust, traffic, lack of child-friendly zones & essential
+                                        local amenities</li>
+                                    <li>• E-rickshaw connectivity has improved, but many planned developments remain
+                                        pending</li>
+                                </ul>
+                                <p class="text-end mb-0"><small><i>Source: The Times of India</i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================floor Preference in L&T Green reserve================================ -->
+            <section class="py-5 bg-white">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="p-4 border rounded-4 shadow-sm bg-light">
+                                <i
+                                    class="bi bi-bar-chart-line-fill display-5 text-primary mb-3 d-block text-center"></i>
+
+                                <h5 class="fw-semibold mb-3 text-center text-uppercase">Current Avg. Price per Sq. Ft.
+                                    (Q2 2025)</h5>
+
+                                <ul class="list-unstyled text-muted small mb-4">
+                                    <li>• <strong>₹15,282/sq.ft</strong> — <em>MagicBricks</em> (↑ ~4% QoQ)</li>
+                                    <li>• <strong>₹15,200/sq.ft</strong> — <em>Housing.com</em> (↑ ~5.37% YoY)</li>
+                                    <li>• <strong>₹15,000–17,000/sq.ft</strong> — <em>360PropGuide</em> (Developer
+                                        range)</li>
+                                </ul>
+
+                                <div class="bg-white border rounded p-3 text-dark small">
+                                    <strong>Summary:</strong> Current rates range from
+                                    <strong>₹15,000–17,000/sq.ft</strong> and are trending upward.
+                                    Sector 115 overall avg: <strong>₹15,717/sq.ft</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================location======================== -->
+            <div class="container my-5">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3504.101254710095!2d77.40413507450728!3d28.566722037067958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sivory%20county%20115%20noida%20!5e0!3m2!1sen!2sin!4v1758267303754!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>• Key Landmarks Nearby:</em></p>
+                        <p><em>1. Fortis Hospital: ~17 minutes </em></p>
+                        <p><em>2. City Centre Metro: ~15 minutes </em></p>
+                        <p><em>3. Amity University: ~15 minutes </em></p>
+                        <p><em>4. Akshardham Temple: ~25 minutes </em></p>
+                        <p><em>5. Mall of India: ~19 minutes </em></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer" style="position: relative; z-index: 10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="single_footer">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Property Sale</a></li>
+                            <li><a href="#">Property Purchase</a></li>
+                            <li><a href="#">The printing and typesetting </a></li>
+                            <li><a href="#">Property Rent / Lease</a></li>
+                            <li><a href="#">Resale Assistance</a></li>
+                            <li><a href="#">Luxury Homes / Villas</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Page Link</h4>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Simply dummy text</a></li>
+                            <li><a href="#">The printing and typesetting </a></li>
+                            <li><a href="#">Standard dummy text</a></li>
+                            <li><a href="#">Type specimen book</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Subscribe today</h4>
+                        <div class="signup_form">
+                            <form id="subscribeForm" class="subscribe">
+                                <input class="subscribe__input" type="email" id="emailInput" name="email"
+                                    placeholder="Enter Email Address" required>
+                                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
+                            </form>
+                            <p id="msg"></p>
+                            <script src="assets/js/subscribe.js"></script>
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-google"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="copyright">Copyright © 2025.</p>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+
+
+
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -18,7 +18,7 @@
 
 <body>
      <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-custom-main">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
     <div class="container-fluid px-4">
       <!-- Left: Logo -->
       <a class="navbar-brand" href="#">
@@ -67,16 +67,15 @@
             <nav class="dashboard-nav-list">
                 <a href="#overview" class="dashboard-nav-item active"><span class="nav-label">Overview</span></a>
 
-                <a href="#pricing" class="dashboard-nav-item"></i><span class="nav-label">Apartment Pricing</span></a>
+                <a href="#architecture" class="dashboard-nav-item"></i><span class="nav-label">Architecture</span></a>
 
-                <a href="#amenities" class="dashboard-nav-item"></i><span class="nav-label">Amenities </span></a>
+                <a href="#pricing" class="dashboard-nav-item"></i><span class="nav-label">Pricing </span></a>
 
+                <a href="#amenities" class="dashboard-nav-item"><span class="nav-label">Amenities</span></a>
                 <a href="#location" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
-                <a href="#summary" class="dashboard-nav-item"><span class="nav-label">Summary</span></a>
                 <a href="#internal" class="dashboard-nav-item"><span class="nav-label">Internal</span></a>
-                <a href="#pricing" class="dashboard-nav-item"><span class="nav-label">Pricing</span></a>
-                <a href="#quick" class="dashboard-nav-item"><span class="nav-label">Quick Takeaways</span></a>
-                <a href="#current" class="dashboard-nav-item"><span class="nav-label">Current</span></a>
+                <a href="#price-List" class="dashboard-nav-item"><span class="nav-label">Price List</span></a>
+                <a href="#gallery" class="dashboard-nav-item"><span class="nav-label">Gallery</span></a>
             </nav>
         </aside>
         <!-- ===================side navbar end================ -->
@@ -122,7 +121,7 @@
             <!-- Architecture & Theme Section -->
             <!--  Testimonial Block !-->
             <section class="py-5">
-                <div class="container">
+                <div class="container" id="architecture">
 
                     <!--  Block !-->
                     <div class="bg-offset-hero position-relative p-4 py-md-5">
@@ -503,7 +502,7 @@
             </div>
 
             <!-- ======================================Price List===================================  -->
-            <section class="price-section">
+            <section class="price-section" id="price-List">
                 <div class="container">
                     <h2>Price List</h2>
 
@@ -543,45 +542,57 @@
 
 
             <!-- ============================projects=========================== -->
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <section class="container">
-                    <h1 class="text-center mb-4">Project</h1>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card project-card">
-                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
-                                <h4 class="card-title mt-4 ms-3">Kalpataru Vista</h4>
-                                <div class="card-body d-flex justify-content-between">
-                                    <p class="price mt-2">₹5.42 Cr - ₹8.9 Cr</p>
-                                    <a href="kalpataru-vista.html" class="btn my-btn mb-2">Explore Project</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card project-card">
-                                <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
-                                <h4 class="card-title mt-3 ms-3">GYGY</h4>
-                                <div class="card-body d-flex justify-content-between">
-                                    <p class="price mt-2">₹1.5 Cr - ₹2.31 Cr</p>
-                                    <a href="gygy.html" class="btn my-btn mb-2">Explore Project</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card project-card">
-                                <img src="assets/img/home6.avif" class="card-img-top" height="100vh" alt="Project">
-                                <h4 class="card-title mt-4 ms-3">ATS Picturesque Reprieves</h4>
-                                <div class="card-body d-flex justify-content-between">
-                                    <p class="price mt-2">₹2.30 Cr - ₹4.32 Cr</p>
-                                    <a href="ats.html" class="btn my-btn mb-2">Explore Project</a>
-                                </div>
-                            </div>
-                        </div>
+           <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn text-white"
+                            style="background-color: rgb(76, 106, 151);">View More</a>
                     </div>
-                </section>
-            </div>
-            <!-- gallery  -->
-            <div class="container py-5">
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn btn-primary mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- =========================gallery===========================  -->
+            <div class="container py-5" id="gallery">
                 <h1 class="heading">Gallery</h1>
 
                 <div class="gallery-image row justify-content-center">

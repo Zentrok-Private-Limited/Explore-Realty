@@ -125,7 +125,7 @@ h1, .h1 {
     -webkit-flex-grow: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
-    margin-top: 84px;
+    margin-top: 180px;
 }
 
 .dashboard-content {
@@ -162,7 +162,7 @@ h1, .h1 {
 }
 
 .dashboard-nav {
-    margin-top: 103px;
+    margin-top: 90px;
     /* margin-left: 5px; */
     background-color: rgb(110, 147, 202);
     /* margin-bottom: 10px; */
