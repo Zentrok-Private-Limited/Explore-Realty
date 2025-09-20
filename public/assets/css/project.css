@@ -1,0 +1,30 @@
+
+    
+ .project-card img {
+  object-fit: cover;
+  height: 220px; /* uniform image height */
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.my-btn {
+  background: #012677;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.my-btn:hover {
+  background: #169093;
+  color: #fff;
+}

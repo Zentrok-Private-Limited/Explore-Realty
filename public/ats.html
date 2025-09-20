@@ -18,22 +18,24 @@
 
 <body>
     <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-        <div class="container-fluid px-4">
-            <!-- Left: Logo -->
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo" class="logo-img">
             </a>
 
-            <!-- Toggler for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
             </button>
 
-            <!-- Right: Menu -->
+            <!-- Nav Links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -59,10 +61,11 @@
             </div>
         </div>
     </nav>
+
     <!-- Navbar End -->
 
 
-   <!--============ side navbar========= -->
+    <!--============ side navbar========= -->
 
     <div class='dashboard'>
         <aside class="dashboard-nav" role="navigation" aria-label="Sidebar">
@@ -76,44 +79,52 @@
                 <a href="#amenities" class="dashboard-nav-item"><span class="nav-label">amenities</span></a>
                 <a href="#location" class="dashboard-nav-item"><span class="nav-label">Location</span></a>
                 <a href="#floor-plans" class="dashboard-nav-item"><span class="nav-label">Floor Plans</span></a>
-                <a href="#floor-preference" class="dashboard-nav-item"><span class="nav-label">Floor Preference</span></a>
-                
+                <a href="#floor-preference" class="dashboard-nav-item"><span class="nav-label">Floor
+                        Preference</span></a>
+
             </nav>
         </aside>
         <!-- ===================side navbar end================ -->
 
-        <div class='dashboard-app' >
+        <div class='dashboard-app'>
             <div class="container-fluid" id="overview">
+                <!-- Banner Image -->
                 <div class="row">
-                    <img src="assets/img/ats-1.jpg" class="img-fluid p-0 ms-3"
-                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
+                    <img src="assets/img/ats-1.jpg" class="img-fluid p-0"
+                        style="height: 50vh; width: 100%; object-fit: cover;" alt="ATS Picturesque Reprieves">
                 </div>
 
-                <h1 class="divino fs-1 d-flex justify-content-center mt-4">ATS Picturesque Reprieves</h1>
-                <h2 class="ms-3 fs-2">Overview</h2>
+                <!-- Title -->
+                <h1 class="divino fs-1 text-center text-white mt-4">ATS Picturesque Reprieves</h1>
+                <h2 class="fs-2 text-center text-md-start ms-md-3">Overview</h2>
 
-                <div class="container-fluid overview p-3 rounded">
-                    <div class="row">
+                <!-- Overview Details -->
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
+
                         <!-- Column 1 -->
                         <div class="col-12 col-md-4 mt-3">
                             <p><span class="fw-bold">RERA:</span> UPRERAPRJ396176 & UPRERAPRJ631</p>
-                            <p><span class="fw-bold">Developer:</span> ATS Homes Private Limited </p>
-                            <p><span class="fw-bold">Project Name:</span>: ATS Picturesque Reprieves (Phase-I &
-                                Phase-II)</p>
+                            <p><span class="fw-bold">Developer:</span> ATS Homes Private Limited</p>
+                            <p><span class="fw-bold">Project Name:</span> ATS Picturesque Reprieves (Phase-I & Phase-II)
+                            </p>
                         </div>
 
                         <!-- Column 2 -->
                         <div class="col-12 col-md-4 mt-3">
-                            <p><span class="fw-bold">Exact Site:</span>Plot No. 1B, Block F, Sector-50, Noida – 201303.
+                            <p><span class="fw-bold">Exact Site:</span> Plot No. 1B, Block F, Sector-50, Noida – 201303
                             </p>
-                            <p><span class="fw-bold">Price:</span> ₹2.67 crore </p>
+                            <p><span class="fw-bold">Price:</span> ₹2.67 crore</p>
                         </div>
 
                         <!-- Column 3 -->
                         <div class="col-12 col-md-4 mt-3">
-                            <p><span class="fw-bold">Project Size:</span>Approximately 20–35 acres with around 18
-                                towers, each up to 37 floors </p>
-                            <div class="elite">
+                            <p><span class="fw-bold">Project Size:</span> Approximately 20–35 acres with around 18
+                                towers, each up to 37 floors</p>
+
+                            <!-- Contact Elite -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
                                 <i class="bi bi-telephone-fill"></i>
                                 <a href="#" class="text-white text-decoration-none ms-2">Contact Elite Team</a>
                             </div>
@@ -122,43 +133,44 @@
                 </div>
             </div>
 
+
             <!-- ===============================gallery======================================  -->
             <section class="gallery-section mt-2" id="gallery">
                 <div class="container">
                     <h2>Gallery</h2>
 
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ats-11.jpg" alt="Gallery Image 1">
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ats-10.webp" alt="Gallery Image 2">
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-5 col-sm-6">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ats-4.jpg" alt="Gallery Image 3">
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ATS-6.jpg" alt="Gallery Image 4">
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ats-7.webp" alt="Gallery Image 5">
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-6 col-md-4">
                             <div class="gallery-img">
                                 <img src="assets/img/ats-1.jpg" alt="Gallery Image 6">
                             </div>
@@ -166,6 +178,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- ======================================Price List===================================  -->
             <section class="price-section" id="price">
                 <div class="container">
@@ -355,13 +368,21 @@
             </section>
 
             <!-- ========================location & Connectivity================== -->
-            <div class="container my-5" id="location">
+            <div class="container mb-5" id="location">
                 <div class="location-section">
                     <div class="map-frame">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.15137437762!2d77.47416067450231!3d28.444852892580546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1007653d66b%3A0x32f4c4533df754e3!2sATS%20Picturesque%20Reprieves%20Sector%20152!5e0!3m2!1sen!2sin!4v1757397027232!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Mobile button -->
+                    <div class="map-btn">
+                        <a href="https://maps.google.com/?q=ATS+Picturesque+Reprieves+Sector+152" target="_blank"
+                            class="btn-map">
+                            Open in Google Maps
+                        </a>
                     </div>
 
                     <div class="location-overlay">
@@ -375,6 +396,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- ============================Floor Plans==========================  -->
             <!-- Floor Plans Section -->
             <div class="container my-5" id="floor-plans">
@@ -541,72 +563,65 @@
                 </div>
             </section>
 
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
 
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
 
-        </div>
-    </div>
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="emailInput"
+                                        name="email" placeholder="Enter Email Address" required />
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+                                <p id="msg" class="small mt-2"></p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
 
-    <div class="footer" style="position: relative; z-index: 10;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <div class="single_footer">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Property Sale</a></li>
-                            <li><a href="#">Property Purchase</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Property Rent / Lease</a></li>
-                            <li><a href="#">Resale Assistance</a></li>
-                            <li><a href="#">Luxury Homes / Villas</a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Page Link</h4>
-                        <ul>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Simply dummy text</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Standard dummy text</a></li>
-                            <li><a href="#">Type specimen book</a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Subscribe today</h4>
-                        <div class="signup_form">
-                            <form id="subscribeForm" class="subscribe">
-                                <input class="subscribe__input" type="email" id="emailInput" name="email"
-                                    placeholder="Enter Email Address" required>
-                                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
-                            </form>
-                            <p id="msg"></p>
-                            <script src="assets/js/subscribe.js"></script>
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
                         </div>
                     </div>
-                    <div class="social_profile">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-google"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <p class="copyright">Copyright © 2025.</p>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->
+                </div><!-- End container -->
+            </footer>
+        </div>
     </div>
-
-
-
 </body>
 <script src="assets/js/vista.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -618,27 +633,28 @@
     AOS.init();
 </script>
 
-    <script>
-        document.querySelectorAll('.testi_person_img_icon ul li img').forEach(img => {
-            img.addEventListener('click', function () {
-                const index = this.getAttribute('data-index');
+<script>
+    document.querySelectorAll('.testi_person_img_icon ul li img').forEach(img => {
+        img.addEventListener('click', function () {
+            const index = this.getAttribute('data-index');
 
-                // 1. Content change
-                document.querySelectorAll('.test_user_review_content').forEach(content => {
-                    content.style.display = content.getAttribute('data-index') === index ? 'block' : 'none';
-                });
-
-                // 2. Change main image
-                const mainImage = document.querySelector('.img_peroson_fullsize .main-user-img');
-                mainImage.src = this.src;
-
-                // 3. Highlight active thumbnail
-                document.querySelectorAll('.testi_person_img_icon ul li').forEach(li => {
-                    li.classList.remove('active_user');
-                });
-                this.parentElement.classList.add('active_user');
+            // 1. Content change
+            document.querySelectorAll('.test_user_review_content').forEach(content => {
+                content.style.display = content.getAttribute('data-index') === index ? 'block' : 'none';
             });
-        });
 
-    </script>
+            // 2. Change main image
+            const mainImage = document.querySelector('.img_peroson_fullsize .main-user-img');
+            mainImage.src = this.src;
+
+            // 3. Highlight active thumbnail
+            document.querySelectorAll('.testi_person_img_icon ul li').forEach(li => {
+                li.classList.remove('active_user');
+            });
+            this.parentElement.classList.add('active_user');
+        });
+    });
+
+</script>
+
 </html>

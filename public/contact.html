@@ -17,22 +17,24 @@
 
 <body style="background: #c6e7fd">
     <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-        <div class="container-fluid px-4">
-            <!-- Left: Logo -->
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo" class="logo-img">
             </a>
 
-            <!-- Toggler for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
             </button>
 
-            <!-- Right: Menu -->
+            <!-- Nav Links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -58,6 +60,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Navbar End -->
 
     <!-- Hero Section -->
@@ -65,12 +68,6 @@
         <img src="assets/img/ats-1.jpg" class="w-100" style="height: 70vh; object-fit: cover;"
             alt="Commercial Building">
 
-        <!-- Text on Image -->
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 class="display-4 fw-bold mb-5">Contact Us</h1>
-            <p class="lead">• <a href="index.html" class="color">Home</a> • <a href="about.html" class="color">About</a>
-                • </p>
-        </div>
 
         <!-- Cards Section (on image) -->
         <div class="card-section">
@@ -152,65 +149,61 @@
         </div>
     </div>
 
-    <!-- footer -->
-    <div class="footer">
+ <!-- footer -->
+    <footer class="bg-dark text-light pt-4 pb-3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <div class="single_footer">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Property Sale</a></li>
-                            <li><a href="#">Property Purchase</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Property Rent / Lease</a></li>
-                            <li><a href="#">Resale Assistance</a></li>
-                            <li><a href="#">Luxury Homes / Villas</a></li>
-                        </ul>
+            <div class="row gy-3">
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                    </ul>
+                </div><!-- End col -->
+
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Page Link</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                    </ul>
+                </div><!-- End col -->
+
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Subscribe today</h5>
+                    <div class="signup_form">
+                        <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                            <input class="subscribe__input form-control me-2" type="email" id="emailInput" name="email"
+                                placeholder="Enter Email Address" required />
+                            <button type="submit" class="subscribe__btn">
+                                <i class="bi bi-send-fill"></i>
+                            </button>
+                        </form>
+                        <p id="msg" class="small mt-2"></p>
                     </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Page Link</h4>
-                        <ul>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Simply dummy text</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Standard dummy text</a></li>
-                            <li><a href="#">Type specimen book</a></li>
-                        </ul>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
                     </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Subscribe today</h4>
-                        <div class="signup_form">
-                            <form id="subscribeForm" class="subscribe">
-                                <input class="subscribe__input" type="email" id="emailInput" name="email"
-                                    placeholder="Enter Email Address" required>
-                                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
-                            </form>
-                            <p id="msg"></p>
-                            <script src="assets/js/subscribe.js"></script>
-                        </div>
-                    </div>
-                    <div class="social_profile">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-google"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <p class="copyright">Copyright © 2025.</p>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->
-    </div>
+                </div><!-- End col -->
+            </div><!-- End row -->
+
+            <div class="row mt-3">
+                <div class="col text-center small">
+                    <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div><!-- End container -->
+    </footer>
 
 </body>
 

@@ -224,15 +224,29 @@ h1, .h1 {
 .exploreRealty:hover {
     background-color: #1f3050;
 }
-.overview {
+/* .overview {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
-}
+} */
 .divino {
     background-color: #284069;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
+}
+#overview .overview {
+  background: #f8f9fa; /* halka grey background */
+}
+
+#overview .elite {
+  background: #0d6efd; /* Bootstrap blue */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#overview .elite:hover {
+  background: #0b5ed7;
 }
 @media (min-width: 992px) {
     .dashboard-app {

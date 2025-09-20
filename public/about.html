@@ -19,22 +19,23 @@
 
 <body style="background: #c6e7fd">
   <!-- Navbar Start -->
+  <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-    <div class="container-fluid px-4">
-      <!-- Left: Logo -->
+    <div class="container-fluid px-3 px-md-4">
+      <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+        <img src="assets/img/logo.jpeg" alt="Explore Realty Logo" class="logo-img">
       </a>
 
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <!-- Toggler Button for Mobile -->
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
       </button>
 
-      <!-- Right: Menu -->
+      <!-- Nav Links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
           </li>
@@ -60,6 +61,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Navbar End -->
 
 
@@ -68,12 +70,6 @@
     <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg" class="w-100"
       style="height: 70vh; object-fit: cover;" alt="Commercial Building">
 
-    <!-- Text on Image -->
-    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-      <h1 class="display-4 fw-bold mb-5">About Us</h1>
-      <p class="lead">• <a href="index.html" class="color">Home</a> • <a href="properties.html"
-          class="color">Properties</a> • </p>
-    </div>
 
     <!-- Cards Section (on image) -->
     <div class="card-section">
@@ -101,35 +97,39 @@
     </div>
   </div>
 
-  <div class="container-fluid mt-5 mb-5 ">
-    <div class="row  ">
-      <div class="col-6 mt-5">
-        <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg"
-          style="border-radius: 5px; box-shadow: 10px 30px rgba(230, 227, 227, 0.2);" alt="">
-      </div>
-      <div class="col-6">
-        <div class="about bg-light p-4 contant">
-          <h1>About</h1>
-          <p class="font">At Elite Partners spaces, we believe finding the right property is more than just a
-            transaction — it's
-            a life-changing experience. With years of experience in the real estate industry, our mission is
-            to connect people with the
-            spaces where they can thrive — whether it's a family home, a growing business’s new office, or a
-            promising investment opportunity.</p>
+  <div class="container-fluid mt-5">
+    <div class="row align-items-center mt-5">
 
-          <p class="font">What sets us apart is our deep market knowledge, client-first approach, and
-            unwavering commitment to
-            transparency and service. We work closely with buyers, sellers, landlords, and investors —
-            helping
-            them make informed, confident decisions.</p>
+      <!-- Image Column -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg" class="img-fluid rounded shadow-sm"
+          alt="About Image">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-12 col-md-6">
+        <div class="bg-light p-4">
+          <h2>About</h2>
+          <p class="font">
+            At Elite Partners Spaces, we believe finding the right property is more than just a transaction —
+            it's a life-changing experience. With years of experience in the real estate industry, our mission is
+            to connect people with the spaces where they can thrive — whether it's a family home, a growing
+            business’s new office, or a promising investment opportunity.
+          </p>
+          <p class="font">
+            What sets us apart is our deep market knowledge, client-first approach, and unwavering commitment
+            to transparency and service. We work closely with buyers, sellers, landlords, and investors —
+            helping them make informed, confident decisions.
+          </p>
         </div>
       </div>
+
     </div>
   </div>
 
 
-  <div class="container">
-    <div class="row m-5">
+  <div class="container my-5">
+    <div class="row">
       <div class="testimonial-container">
         <div class="testimonial-grid">
           <div class="image-container" id="image-container"></div>
@@ -156,88 +156,77 @@
 
   <!-- ====== Our Services Section ====== -->
 
-  <section class="container-fluid">
+  <section class="container-fluid py-5">
     <div class="row">
-      <div class="col-6">
-        <div class="service">
-          <h1 class="ms-5 mt-5">Our Service</h1>
-          <p class="m-5 fs-4">
-            Fragment is a design agency that provides services such as branding, design, and development. My
-            responsibility was to design the agency's website. I found this project to be one of the most challenging I
-            have worked on recently. This is a page designed by this agency's services department. The style of this
-            project is different from my recent work, and that's why I was drawn to it.
+      <!-- Left Service Description -->
+      <h1 class="text-center mb-5">Our Service</h1>
+      <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+        <div class="service p-4">
+          <p class="m-3 font">
+            Fragment is a design agency that provides services such as branding,
+            design, and development. My responsibility was to design the agency's
+            website. I found this project to be one of the most challenging I have
+            worked on recently. This is a page designed by this agency's services
+            department. The style of this project is different from my recent
+            work, and that's why I was drawn to it.
           </p>
         </div>
       </div>
-      <div class="col-6">
-        <div class="container">
-          <div class=" largura-site ma">
-            <ul class="treatment-list mb">
-              <li>
-                <a class="treatment treatment--5" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Property Sale</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--6" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Property Purchase</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--3" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Rent / Lease</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--4" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Legal Assistance</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--1" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Property Management</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--2" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>NRI / Investment Advisory</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="treatment treatment--7" href="">
-                  <div class="fundo">
-                    <div class="container_treatment">
-                      <span>Loan & Finance</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+      <!-- Right Services List -->
+      <div class="col-lg-6 col-12">
+        <div class="largura-site">
+          <ul class="treatment-list">
+            <li>
+              <a class="treatment treatment--5" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Property Sale</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--6" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Property Purchase</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--3" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Rent / Lease</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--4" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Legal Assistance</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--1" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Property Management</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--2" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>NRI / Investment Advisory</span></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="treatment treatment--7" href="">
+                <div class="fundo">
+                  <div class="container_treatment"><span>Loan & Finance</span></div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -247,71 +236,64 @@
 
 
 
-
-
   <!-- footer -->
-  <div class="footer">
+  <footer class="bg-dark text-light pt-4 pb-3">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-4 col-xs-12">
-          <div class="single_footer">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Property Sale</a></li>
-              <li><a href="#">Property Purchase</a></li>
-              <li><a href="#">The printing and typesetting </a></li>
-              <li><a href="#">Property Rent / Lease</a></li>
-              <li><a href="#">Resale Assistance</a></li>
-              <li><a href="#">Luxury Homes / Villas</a></li>
-            </ul>
-          </div>
-        </div><!--- END COL -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="single_footer single_footer_address">
-            <h4>Page Link</h4>
-            <ul>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Simply dummy text</a></li>
-              <li><a href="#">The printing and typesetting </a></li>
-              <li><a href="#">Standard dummy text</a></li>
-              <li><a href="#">Type specimen book</a></li>
-            </ul>
-          </div>
-        </div><!--- END COL -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="single_footer single_footer_address">
-            <h4>Subscribe today</h4>
-            <div class="signup_form">
-              <form id="subscribeForm" class="subscribe">
-                <input class="subscribe__input" type="email" id="emailInput" name="email"
-                  placeholder="Enter Email Address" required>
-                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
-              </form>
-              <p id="msg"></p>
-              <script src="assets/js/subscribe.js"></script>
-            </div>
-          </div>
-          <div class="social_profile">
-            <ul>
-              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-              <li><a href="#"><i class="bi bi-google"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div><!--- END COL -->
-      </div><!--- END ROW -->
-      <div class="row">
-        <div class="col-lg-12 col-sm-12 col-xs-12">
-          <p class="copyright">Copyright © 2025.</p>
-        </div><!--- END COL -->
-      </div><!--- END ROW -->
-    </div><!--- END CONTAINER -->
-  </div>
+      <div class="row gy-3">
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Services</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+          </ul>
+        </div><!-- End col -->
 
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Page Link</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+          </ul>
+        </div><!-- End col -->
+
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Subscribe today</h5>
+          <div class="signup_form">
+            <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+              <input class="subscribe__input form-control me-2" type="email" id="emailInput" name="email"
+                placeholder="Enter Email Address" required />
+              <button type="submit" class="subscribe__btn">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
+            <p id="msg" class="small mt-2"></p>
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div><!-- End col -->
+      </div><!-- End row -->
+
+      <div class="row mt-3">
+        <div class="col text-center small">
+          <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div><!-- End container -->
+  </footer>
 </body>
 <script src="assets/js/testimonial.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </html>

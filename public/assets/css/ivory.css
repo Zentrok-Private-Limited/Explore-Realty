@@ -38,8 +38,9 @@
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    background-color:  rgb(110, 147, 202);
-    z-index: 1; /* sidebar ko peeche bhejne ke liye kam value */
+    background-color: rgb(110, 147, 202);
+    z-index: 1;
+    /* sidebar ko peeche bhejne ke liye kam value */
     /* padding-bottom: 70px;  footer space ke liye */
 }
 
@@ -70,7 +71,7 @@
 
 
 .dashboard-nav-list {
-  margin-top: 60px;
+    margin-top: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -105,6 +106,7 @@
 .active {
     background: rgba(0, 0, 0, 0.1);
 }
+
 .exploreRealty {
     background-color: #284069;
     width: fit-content;
@@ -119,16 +121,19 @@
 .exploreRealty:hover {
     background-color: #1f3050;
 }
+
 .overview {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
 }
+
 .divino {
     background-color: #284069;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
 }
+
 @media (min-width: 992px) {
     .dashboard-app {
         margin-left: 238px;
@@ -161,6 +166,27 @@
         display: block;
     }
 }
+
+@media (max-width: 767px) {
+
+    #overview h1,
+    #overview h2 {
+        text-align: center;
+    }
+
+    .overview p {
+        font-size: 14px;
+    }
+
+    .exploreRealty {
+        text-align: center;
+    }
+
+    .exploreRealty a {
+        font-size: 14px;
+    }
+}
+
 
 @media (max-width: 992px) {
     .dashboard-nav header .menu-toggle {
@@ -266,13 +292,6 @@ section.container {
     font-weight: 700;
 }
 
-/* Image Container Sizing */
-/* .item3,
-.item4,
-.item5 {
-    height: 230px;
-} */
-
 /* Image Styling */
 .item img {
     width: 100%;
@@ -329,48 +348,96 @@ h2.text-center {
     }
 }
 
+@media (max-width: 768px) {
+    .testimonials .title {
+        font-size: 1.5rem;
+    }
+
+    .testimonials .description {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .item3,
+    .item4,
+    .item5 {
+        height: 130px;
+    }
+}
+
 /* LOCATION */
 .location-section {
     position: relative;
-    /* height: 70vh; */
-}
-
-.map-frame {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
 }
 
 .map-frame iframe {
-    width: 79vw;
-    height: 70vh;
+    width: 100%;
+    height: 450px;
     border: 0;
+    border-radius: 10px;
 }
 
 .location-overlay {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 5%;
     transform: translateY(-50%);
-    background: rgba(110, 147, 202, 0.95);
+    background: rgba(75, 59, 79, 0.95);
     color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    max-width: 400px;
-    text-align: left;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 350px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
-.location-overlay h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+.btn-map {
+    display: none;
+    /* hidden on desktop */
 }
 
-.location-overlay p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
+/* ✅ Mobile styles */
+@media (max-width: 768px) {
+    .location-overlay {
+        position: static;
+        /* अब map के नीचे आ जाएगी */
+        transform: none;
+        max-width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
 
-.location-overlay hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    margin: 20px 0;
+    .map-frame {
+        display: none;
+    }
+
+    .btn-map {
+        display: inline-block;
+        /* दिखेगा mobile पर */
+        text-align: center;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #4b3b4f;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    .btn-map:hover {
+        background: #322634;
+    }
+
+    .location-overlay h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .location-overlay p {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }
 }

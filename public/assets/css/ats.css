@@ -38,8 +38,9 @@
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    background-color:  rgb(110, 147, 202);
-    z-index: 1; /* sidebar ko peeche bhejne ke liye kam value */
+    background-color: rgb(110, 147, 202);
+    z-index: 1;
+    /* sidebar ko peeche bhejne ke liye kam value */
     /* padding-bottom: 70px;  footer space ke liye */
 }
 
@@ -105,6 +106,7 @@
 .active {
     background: rgba(0, 0, 0, 0.1);
 }
+
 .exploreRealty {
     background-color: #284069;
     width: fit-content;
@@ -119,16 +121,41 @@
 .exploreRealty:hover {
     background-color: #1f3050;
 }
-.overview {
+
+/* .overview {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+} */
+#overview .overview {
+    background: #f8f9fa;
+    /* halka grey background */
 }
+
+#overview h1,
+#overview h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+}
+
+#overview .elite {
+    background: #0d6efd;
+    /* Bootstrap blue */
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#overview .elite:hover {
+    background: #0b5ed7;
+}
+
 .divino {
     background-color: #284069;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
 }
+
 @media (min-width: 992px) {
     .dashboard-app {
         margin-left: 238px;
@@ -266,17 +293,17 @@ h1 {
 
 
 .gallery-section {
-    /* padding: 60px 0; */
-    background: #f8f9fa;
+    background: rgb(228, 235, 245);
     text-align: center;
-    background-color: rgb(228, 235, 245);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px 0;
 }
 
 .gallery-section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: rgb(102, 133, 179);
+    font-weight: 600;
 }
 
 .gallery-img {
@@ -286,16 +313,24 @@ h1 {
 }
 
 .gallery-img img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .gallery-img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+/* Mobile (max 576px) */
+@media (max-width: 576px) {
+  .gallery-img img {
+    height: 170px; /* square ke liye approx width ke barabar */
+    aspect-ratio: 1 / 1; /* perfect square maintain karega */
+    object-fit: cover;
+  }
+}
 
 
 .location-section {
@@ -311,6 +346,39 @@ h1 {
     width: 79vw;
     height: 90vh;
     border: 0;
+}
+.map-btn {
+  display: none;
+}
+.btn-map {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4b3b4f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn-map:hover {
+  background: #322634;
+}
+/* Mobile version */
+@media (max-width: 576px) {
+  .map-frame {
+    display: none;
+  }
+  .map-btn {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .location-overlay {
+    position: static;
+    max-width: 100%;
+    /* margin-bottom: 40px; */
+  }
 }
 
 .location-overlay {

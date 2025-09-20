@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/testimonial.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/properties.css">
+  <link rel="stylesheet" href="assets/css/project.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,22 +19,23 @@
 
 <body style="background: #c6e7fd">
   <!-- Navbar Start -->
+  <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-    <div class="container-fluid px-4">
-      <!-- Left: Logo -->
+    <div class="container-fluid px-3 px-md-4">
+      <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
+        <img src="assets/img/logo.jpeg" alt="Explore Realty Logo" class="logo-img">
       </a>
 
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <!-- Toggler Button for Mobile -->
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
       </button>
 
-      <!-- Right: Menu -->
+      <!-- Nav Links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
           </li>
@@ -60,6 +61,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Navbar End -->
 
 
@@ -72,237 +74,251 @@
       style="z-index: 1;">
       <h1 class="fw-bold mb-3">PROJECTS</h1>
       <p>
-        • <a href="about.html" class="text-warning fs-4">About</a>
-        • <a href="contact.html" class="text-warning fs-4">Contact</a> •
+        • <a href="about.html" class="text-white fs-4">About</a>
+        • <a href="contact.html" class="text-white fs-4">Contact</a> •
       </p>
     </div>
   </div>
 
   <!-- ✅ Property Tabs Section -->
-  <section class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Explore Projects</h2>
-      </div>
-    </div>
-    <div class="row">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-            type="button" role="tab" aria-controls="nav-home" aria-selected="true">ALL</button>
-
-          <button class="nav-link text-dark" id="nav-launched-tab" data-bs-toggle="tab" data-bs-target="#nav-launched"
-            type="button" role="tab" aria-controls="nav-launched" aria-selected="false">Newly Launched</button>
-
-          <button class="nav-link text-dark" id="nav-ready-tab" data-bs-toggle="tab" data-bs-target="#nav-ready"
-            type="button" role="tab" aria-controls="nav-ready" aria-selected="false">Trending Projects</button>
-
-          <button class="nav-link text-dark" id="nav-upcoming-tab" data-bs-toggle="tab" data-bs-target="#nav-upcoming"
-            type="button" role="tab" aria-controls="nav-upcoming" aria-selected="false">Upcoming</button>
-
-          <button class="nav-link text-dark" id="nav-commercial-tab" data-bs-toggle="tab"
-            data-bs-target="#nav-commercial" type="button" role="tab" aria-controls="nav-commercial"
-            aria-selected="false">Commercial</button>
-          <button class="nav-link text-dark" id="nav-residential-tab" data-bs-toggle="tab"
-            data-bs-target="#nav-residential" type="button" role="tab" aria-controls="nav-residential"
-            aria-selected="false">Residential</button>
-        </div>
-      </nav>
-
-      <div class="tab-content" id="nav-tabContent">
-
-
-        <!-- ======= Trending ========= -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <section class="container">
-            <div class="row">
-              <div class="col-4">
-                <div class="card project-card">
-                  <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
-                  <h4 class="card-title mt-4 ms-3">Kalpataru Vista</h4>
-                  <div class="card-body d-flex justify-content-between">
-                    <p class="price mt-2">₹5.42 Cr - ₹8.9 Cr</p>
-                    <a href="kalpataru-vista.html" class="btn my-btn mb-3">Explore Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card project-card">
-                  <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                  <h4 class="card-title mt-3 ms-3">GYGY</h4>
-                  <div class="card-body d-flex justify-content-between">
-                    <p class="price mt-2">₹1.5 Cr - ₹2.31 Cr</p>
-                    <a href="gygy.html" class="btn my-btn mb-5">Explore Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card project-card">
-                  <img src="assets/img/home6.avif" class="card-img-top" height="100vh" alt="Project">
-                  <h4 class="card-title mt-4 ms-3">ATS Picturesque Reprieves</h4>
-                  <div class="card-body d-flex justify-content-between">
-                    <p class="price mt-2">₹2.30 Cr - ₹4.32 Cr</p>
-                    <a href="ats.html" class="btn my-btn mb-2">Explore Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-4">
-                <div class="card project-card">
-                  <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                  <h4 class="card-title mt-3 ms-3">L&T Green Reserve</h4>
-                  <div class="card-body d-flex justify-content-between">
-                    <p class="price mt-2">₹4.8 Cr - ₹11.44 Cr</p>
-                    <a href="L&T.HTML" class="btn my-btn mb-5">Explore Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card project-card">
-                  <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
-                  <h4 class="card-title mt-4 ms-3">Ivory County</h4>
-                  <div class="card-body d-flex justify-content-between">
-                    <p class="price mt-2">₹3.35 Cr+ - ₹12.83 Cr+ </p>
-                    <a href="Ivory.html" class="btn my-btn mb-3">Explore Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="tab-content mt-5" id="nav-tabContent">
-          <div class="tab-pane fade" id="nav-launched" role="tabpanel" aria-labelledby="nav-launchede-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                    <h4 class="card-title mt-3 ms-3">L&T GREEN RESERVE </h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹4.8 Cr - ₹11.44 Cr</p>
-                      <a href="L&T.HTML" class="btn my-btn mb-5">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-ready" role="tabpanel" aria-labelledby="nav-ready-tab">Ready To Move</div>
-          <div class="tab-pane fade" id="nav-upcoming" role="tabpanel" aria-labelledby="nav-upcoming-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                    <h4 class="card-title mt-3 ms-3">L&T GREEN RESERVE </h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹4.8 Cr - ₹11.44 Cr</p>
-                      <a href="L&T.HTML" class="btn my-btn mb-5">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-commercial" role="tabpanel" aria-labelledby="nav-commercial-tab">
-            <div class="container mt-5">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                    <h4 class="card-title mt-3 ms-3">GYGY</h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹1.5 Cr - ₹2.31 Cr</p>
-                      <a href="gygy.html" class="btn my-btn mb-5">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-residential" role="tabpanel" aria-labelledby="nav-residential-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
-                    <h4 class="card-title mt-4 ms-3">Kalpataru Vista</h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹5.42 Cr - ₹8.9 Cr</p>
-                      <a href="kalpataru-vista.html" class="btn my-btn mb-3">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home6.avif" class="card-img-top" height="100vh" alt="Project">
-                    <h4 class="card-title mt-4 ms-3">ATS Picturesque Reprieves</h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹2.30 Cr - ₹4.32 Cr</p>
-                      <a href="ats.html" class="btn my-btn mb-2">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card project-card">
-                    <img src="assets/img/home13.webp" class="card-img-top" height="100vh" alt="Project">
-                    <h4 class="card-title mt-3 ms-3">L&T GREEN RESERVE </h4>
-                    <div class="card-body d-flex justify-content-between">
-                      <p class="price mt-2">₹4.8 Cr - ₹11.44 Cr</p>
-                      <a href="L&T.HTML" class="btn my-btn mb-5">Explore Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-  </section>
-
-  <!-- ✅ Footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-12 col-md-4">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Property Sale</a></li>
-            <li><a href="#">Property Purchase</a></li>
-            <li><a href="#">Property Rent / Lease</a></li>
-            <li><a href="#">Resale Assistance</a></li>
-            <li><a href="#">Luxury Homes / Villas</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4 mt-4 mt-md-0">
-          <h4>Page Links</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4 mt-4 mt-md-0">
-          <h4>Subscribe Today</h4>
-          <form class="d-flex">
-            <input class="form-control me-2" type="email" placeholder="Enter Email" required>
-            <button class="btn btn-warning"><i class="bi bi-send-fill"></i></button>
-          </form>
-          <div class="mt-3">
-            <a href="#"><i class="bi bi-facebook text-white fs-4 me-2"></i></a>
-            <a href="#"><i class="bi bi-twitter text-white fs-4 me-2"></i></a>
-            <a href="#"><i class="bi bi-instagram text-white fs-4"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-3">
-        <p class="mb-0">Copyright © 2025 Elite Partners Spaces.</p>
-      </div>
+  <section class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-4">Explore Projects</h2>
     </div>
   </div>
+
+  <div class="row">
+    <nav>
+      <div class="nav nav-tabs flex-wrap" id="nav-tab" role="tablist">
+        <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+          type="button" role="tab">ALL</button>
+
+        <button class="nav-link text-dark" id="nav-launched-tab" data-bs-toggle="tab" data-bs-target="#nav-launched"
+          type="button" role="tab">Newly Launched</button>
+
+        <button class="nav-link text-dark" id="nav-ready-tab" data-bs-toggle="tab" data-bs-target="#nav-ready"
+          type="button" role="tab">Trending Projects</button>
+
+        <button class="nav-link text-dark" id="nav-upcoming-tab" data-bs-toggle="tab" data-bs-target="#nav-upcoming"
+          type="button" role="tab">Upcoming</button>
+
+        <button class="nav-link text-dark" id="nav-commercial-tab" data-bs-toggle="tab" data-bs-target="#nav-commercial"
+          type="button" role="tab">Commercial</button>
+
+        <button class="nav-link text-dark" id="nav-residential-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-residential" type="button" role="tab">Residential</button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="tab-content mt-4" id="nav-tabContent">
+
+    <!-- ======= ALL Projects ========= -->
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">Kalpataru Vista</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹5.42 Cr - ₹8.9 Cr</p>
+              <a href="kalpataru-vista.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">GYGY</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹1.5 Cr - ₹2.31 Cr</p>
+              <a href="gygy.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home6.avif" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">ATS Picturesque Reprieves</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹2.30 Cr - ₹4.32 Cr</p>
+              <a href="ats.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">L&T Green Reserve</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹4.8 Cr - ₹11.44 Cr</p>
+              <a href="L&T.HTML" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">Ivory County</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹3.35 Cr+ - ₹12.83 Cr+</p>
+              <a href="Ivory.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Newly Launched ========= -->
+    <div class="tab-pane fade" id="nav-launched" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">L&T Green Reserve</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹4.8 Cr - ₹11.44 Cr</p>
+              <a href="L&T.HTML" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Upcoming ========= -->
+    <div class="tab-pane fade" id="nav-upcoming" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">L&T Green Reserve</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹4.8 Cr - ₹11.44 Cr</p>
+              <a href="L&T.HTML" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Commercial ========= -->
+    <div class="tab-pane fade" id="nav-commercial" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">GYGY</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹1.5 Cr - ₹2.31 Cr</p>
+              <a href="gygy.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Residential ========= -->
+    <div class="tab-pane fade" id="nav-residential" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">Kalpataru Vista</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹5.42 Cr - ₹8.9 Cr</p>
+              <a href="kalpataru-vista.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home6.avif" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">ATS Picturesque Reprieves</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹2.30 Cr - ₹4.32 Cr</p>
+              <a href="ats.html" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+            <h4 class="card-title mt-3 ms-3">L&T Green Reserve</h4>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <p class="price mb-0">₹4.8 Cr - ₹11.44 Cr</p>
+              <a href="L&T.HTML" class="btn my-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- footer -->
+  <footer class="bg-dark text-light pt-4 pb-3">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Services</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+          </ul>
+        </div><!-- End col -->
+
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Page Link</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+          </ul>
+        </div><!-- End col -->
+
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Subscribe today</h5>
+          <div class="signup_form">
+            <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+              <input class="subscribe__input form-control me-2" type="email" id="emailInput" name="email"
+                placeholder="Enter Email Address" required />
+              <button type="submit" class="subscribe__btn">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
+            <p id="msg" class="small mt-2"></p>
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div><!-- End col -->
+      </div><!-- End row -->
+
+      <div class="row mt-3">
+        <div class="col text-center small">
+          <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div><!-- End container -->
+  </footer>
   <script src="assets/js/testimonial.js"></script>
 
   <!-- Bootstrap JS -->

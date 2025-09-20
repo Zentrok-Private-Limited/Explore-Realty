@@ -17,47 +17,52 @@
 </head>
 
 <body>
-     <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-    <div class="container-fluid px-4">
-      <!-- Left: Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.jpeg" alt="Explore Realty Logo">
-      </a>
-
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler fixed-top" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Right: Menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-menu-up"></i>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.jpeg" alt="Explore Realty Logo" class="logo-img">
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-dark" href="#">Property</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar End -->
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
 
 
     <!--============ side navbar========= -->
@@ -81,17 +86,17 @@
         <!-- ===================side navbar end================ -->
 
         <div class='dashboard-app'>
-            <div class="container-fluid"  id="overview">
+            <div class="container-fluid" id="overview">
                 <div class="row">
-                    <img src="assets/img/hotel.jpg" class="img-fluid p-0 ms-3"
-                        style="height: 50vh; width: 79vw; object-fit: cover;" alt="">
+                    <img src="assets/img/hotel.jpg" class="img-fluid p-0 ms-md-3"
+                        style="height: 50vh; width: 100%; object-fit: cover;" alt="">
                 </div>
 
-                <h1 class="divino d-flex justify-content-center mt-4">Kalpataru Vista</h1>
-                <h2 class="ms-3">Overview</h2>
+                <h1 class="divino d-flex justify-content-center mt-4 text-center">Kalpataru Vista</h1>
+                <h2 class="ms-3 text-center text-md-start">Overview</h2>
 
-                <div class="container-fluid overview p-3 rounded">
-                    <div class="row">
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
                         <!-- Column 1 -->
                         <div class="col-12 col-md-4 mt-3">
                             <p><span class="fw-bold">RERA:</span> UPRERAPRJ14980</p>
@@ -109,7 +114,8 @@
                         <!-- Column 3 -->
                         <div class="col-12 col-md-4 mt-3">
                             <p><span class="fw-bold">Price:</span> ₹5.42 Cr*</p>
-                            <div class="elite">
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
                                 <i class="bi bi-telephone-fill"></i>
                                 <a href="#" class="text-white text-decoration-none ms-2">Contact Elite Team</a>
                             </div>
@@ -542,7 +548,7 @@
 
 
             <!-- ============================projects=========================== -->
-           <section class="projects-section py-5">
+            <section class="projects-section py-5">
                 <div class="container">
                     <div class="d-flex mb-4 justify-content-between align-items-center">
                         <h2>Projects</h2>
@@ -637,115 +643,80 @@
                             <div class="transparent-box"></div>
                         </div>
                     </div>
+
+
+                    <script>
+                        function revealOnScroll() {
+                            document.querySelectorAll('.reveal').forEach(el => {
+                                let top = el.getBoundingClientRect().top;
+                                let windowHeight = window.innerHeight;
+                                if (top < windowHeight - 50) { el.classList.add('show'); }
+                            });
+                        }
+                        window.addEventListener('scroll', revealOnScroll);
+                        window.addEventListener('load', revealOnScroll);
+                    </script>
                 </div>
             </div>
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
 
-            <!-- Animation CSS -->
-            <!-- <style>
-                .kv-section {
-                    background: #f8f9fa;
-                    border-radius: 1.25rem;
-                    padding: 2rem;
-                }
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
 
-                .kv-card {
-                    border: 0;
-                    border-radius: 1rem;
-                    box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
-                }
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="emailInput"
+                                        name="email" placeholder="Enter Email Address" required />
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+                                <p id="msg" class="small mt-2"></p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
 
-                .kv-badge {
-                    background: linear-gradient(135deg, #0d6efd, #6ea8fe);
-                }
-
-                .reveal {
-                    opacity: 0;
-                    transform: translateY(30px);
-                    transition: all 0.8s ease;
-                }
-
-                .reveal.show {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            </style> -->
-
-            <!-- Animation Script -->
-            <script>
-                function revealOnScroll() {
-                    document.querySelectorAll('.reveal').forEach(el => {
-                        let top = el.getBoundingClientRect().top;
-                        let windowHeight = window.innerHeight;
-                        if (top < windowHeight - 50) { el.classList.add('show'); }
-                    });
-                }
-                window.addEventListener('scroll', revealOnScroll);
-                window.addEventListener('load', revealOnScroll);
-            </script>
-        </div>
-    </div>
-
-    <div class="footer" style="position: relative; z-index: 10;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-4 col-xs-12">
-                    <div class="single_footer">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Property Sale</a></li>
-                            <li><a href="#">Property Purchase</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Property Rent / Lease</a></li>
-                            <li><a href="#">Resale Assistance</a></li>
-                            <li><a href="#">Luxury Homes / Villas</a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Page Link</h4>
-                        <ul>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Simply dummy text</a></li>
-                            <li><a href="#">The printing and typesetting </a></li>
-                            <li><a href="#">Standard dummy text</a></li>
-                            <li><a href="#">Type specimen book</a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single_footer single_footer_address">
-                        <h4>Subscribe today</h4>
-                        <div class="signup_form">
-                            <form id="subscribeForm" class="subscribe">
-                                <input class="subscribe__input" type="email" id="emailInput" name="email"
-                                    placeholder="Enter Email Address" required>
-                                <button type="submit" class="subscribe__btn"><i class="bi bi-send-fill"></i></button>
-                            </form>
-                            <p id="msg"></p>
-                            <script src="assets/js/subscribe.js"></script>
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
                         </div>
                     </div>
-                    <div class="social_profile">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-google"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <p class="copyright">Copyright © 2025.</p>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->
+                </div><!-- End container -->
+            </footer>
+        </div>
     </div>
-
-    </script>
-
 
 
 
